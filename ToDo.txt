@@ -1,4 +1,5 @@
-﻿--- VBScript compile
+﻿--- GIT repository
+--- VBScript compile
 --- work directory view all files
 --- list of variable
       intellisense variable use
