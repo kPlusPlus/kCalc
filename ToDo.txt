@@ -1,0 +1,57 @@
+﻿--- VBScript compile
+--- work directory view all files
+--- list of variable
+      intellisense variable use
+      all variable must be in green color
+--- list of custom functions
+
+
+--- pogledaj intellisense neće iskakati na naredbama, zašto ???
+
++++ txtBoxScript uspješno je prebačen u RichtText rtbBoxScript
+	pa se sada može kod farbati i sve ostalo ...
+
+--- txtFunctionInfo neka visina bude automatska prema količini texta koji ide u nju
+jer ako je uvijek 180 onda je prevelika i nametljiva
+mora biti točna koliko i texta
+
+--- dovrši unos Reserved Word JScript naredbi u xFunctional.xml
+sve kao prema dosadašnjoj sintaxy jer tako je najbolje te se ne mora imati dva skupa podataka
+
+
+--- auto intellisense u kombinaciji sa autocomplete
+
+* još napravi listu za varijable
+	npr. var a = 101;
+* farbanje koda
+* IntelliSense
+
+
+za DZ pogledaj
+// ovako napravi i za sve ostale
+
+dokani objekti da se vrate u format istovjetan onom prije dock.fill
+
+
++++ farbanje comment line  postoji za /* */
+
+-- autocomplete na tipku kao npr Math. _ _ _ _
+		---> +++ moraš napraviti da znakove samo traži u trenutnom redu
+		--- moraš popraviti da dva puta ispisuje Math.sin()Math.
+
+-- recent file list for example last 4
+-- save all user parameter from form in binary formatter object file and reload it !!!
+
+-- opcija snimanja i text boxa resultat i doljnjeg ovisno prema izvoru context menua kao parrenta
++++ postavio automatsku opciju da se textovi iz oba text i rtf boxa automatski snimaju u binnary formater
+	i kod svakog ponovnog pokretanja vraćaju
+	
+	
+DEBUG
+----------
+
+	ispravi jer sada LoadObjects pregazi učitani file
+	
+
+
+--- napravi da radi pod više programskih jezika

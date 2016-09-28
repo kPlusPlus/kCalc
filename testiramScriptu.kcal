@@ -1,0 +1,6 @@
+/* za testiranje */
+var ime = "Norton Ghost 12";
+var cijena = 69;
+var tecajUSD = 4.67;
+var cijenaKuna = cijena * tecajUSD;
+var strLabel = " program " + ime + " cijena: " + cijenaKuna + " kn";
