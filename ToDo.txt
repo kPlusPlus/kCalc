@@ -1,5 +1,6 @@
 ﻿napravio sam promjenu
---+ GIT repository
++++ dogradio sam jscript sa 7 na 10
++++ GIT repository
 --- VBScript compile
 --- work directory view all files
 --- list of variable

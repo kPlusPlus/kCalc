@@ -98,10 +98,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.JScript">
-      <Name>Microsoft.JScript</Name>
-      <HintPath>Microsoft.JScript.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="Microsoft.VisualBasic">
       <Name>Microsoft.VisualBasic</Name>
     </Reference>

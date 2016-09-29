@@ -14,9 +14,6 @@
     <Setting Name="FormBackColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">64, 0, 0</Value>
     </Setting>
-    <Setting Name="myFontDisplay" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Pocket Calculator, 18pt, style=Bold</Value>
-    </Setting>
     <Setting Name="myFontScriptBox" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Tahoma, 9pt</Value>
     </Setting>
@@ -49,6 +46,9 @@
     </Setting>
     <Setting Name="myPrinterFont" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Microsoft Sans Serif, 10.2pt</Value>
+    </Setting>
+    <Setting Name="myFontDisplay" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 18pt, style=Bold</Value>
     </Setting>
   </Settings>
 </SettingsFile>
