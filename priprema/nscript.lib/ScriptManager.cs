@@ -53,9 +53,9 @@ namespace NScript
 					throw new UnsupportedLanguageExecption(extension);
 			}
 
-			System.CodeDom.Compiler.ICodeCompiler compiler = provider.CreateCompiler();
-			
-			System.CodeDom.Compiler.CompilerParameters compilerparams = new System.CodeDom.Compiler.CompilerParameters();
+            ICodeCompiler compiler = provider.CreateCompiler();
+
+            CompilerParameters compilerparams = new CompilerParameters();
 			compilerparams.GenerateInMemory = true;
 			compilerparams.GenerateExecutable = true;
 			

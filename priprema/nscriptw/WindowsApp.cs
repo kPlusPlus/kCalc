@@ -22,7 +22,7 @@ namespace NScript
 			MessageBox.Show(message, EntryAssemblyName, MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
-		protected override void ExecutionLoop(System.IAsyncResult result)
+		protected override void ExecutionLoop(IAsyncResult result)
 		{
 			icon = new NotifyIcon();
 			timer = new Timer();

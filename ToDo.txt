@@ -1,6 +1,7 @@
 ﻿napravio sam promjenu
 +++ dogradio sam jscript sa 7 na 10
 +++ GIT repository
+--- uključi ScriptEngine
 --- VBScript compile
 --- work directory view all files
 --- list of variable
