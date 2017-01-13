@@ -1,4 +1,5 @@
-﻿using System;
+﻿// PM: Install-Package FSharp.Compiler.CodeDom 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ using Microsoft.VisualBasic;
 using System.Reflection;
 using System.CodeDom.Compiler;
 //using Microsoft.FSharp.Compiler.CodeDom;
+using FSharp.Compiler.CodeDom;
 
 namespace kCalc
 {
@@ -21,7 +23,7 @@ namespace kCalc
         private Type evaluatorType = null;
         private CodeDomProvider compiler;
         private CompilerParameters parameters;
-        private CompilerResults results;
+        public CompilerResults results;
         Assembly assembly;
         private string source;
         string variables, variables1;
@@ -127,15 +129,15 @@ namespace kCalc
                         code + "\r\nreturn Result; \r\n}\r\n}\r\n}\r\n";
                     compiler = new JScriptCodeProvider();
                     break;
-                //case Languages.FSharp:
-                //    source = "#light\r\nmodule UserScript\r\nopen System\r\n" +
-                //        "type RunScript" + count.ToString() + "() =\r\n" +
-                //        "    let mutable Result = Double.NaN\r\n" +
-                //        variables + "\r\n" + variables1 +
-                //        "    member this.Eval() =\r\n" +
-                //        code + "\r\n        Result\r\n";
-                //    compiler = new FSharpCodeProvider();
-                //    break;
+                case Languages.FSharp:
+                    source = "#light\r\nmodule UserScript\r\nopen System\r\n" +
+                        "type RunScript" + count.ToString() + "() =\r\n" +
+                        "    let mutable Result = Double.NaN\r\n" +
+                        variables + "\r\n" + variables1 +
+                        "    member this.Eval() =\r\n" +
+                        code + "\r\n        Result\r\n";
+                    compiler = new FSharpCodeProvider();
+                    break;
                 default: // VBasic
                     source = "Imports System\r\nNamespace UserScript\r\nPublic Class RunScript" + count.ToString() + "\r\n" +
                         variables + "Public Function Eval() As Double\r\nDim Result As Double\r\n" +

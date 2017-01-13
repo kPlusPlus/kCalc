@@ -61,8 +61,9 @@ namespace kCalc
 			}
 			catch(Exception ex)
 			{
-				return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
-			}
+                //return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
+                return "ERROR " + ex.Message.ToString() + " >>> " + ex.Source + " " + ex.StackTrace;
+            }
 		}
 
 			   
