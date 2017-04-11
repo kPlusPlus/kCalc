@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Function>
+	<!-- Method -->
+	<Func name="Absoulute" formula="Math.abs()" regex="Math\.abs" cursor="-1" desc="Returns the absolute value of a number."
+		cat="Trig" type="keyword" />
+	<Func name="Power" formula="Math.pow( , )" cursor="-3" desc="Returns the value of a base expression taken to a specified power."
+		cat="Trig" type="keyword" />
+	<Func name="Sin" formula="Math.sin()" cursor="-1" desc="Sin" cat="Trig" type="keyword" />
+	<Func name="Asin" formula="Math.asin()" cursor="-1" desc="ASin" cat="Trig" type = "keyword" />
+	<Func name="Cos" formula="Math.cos()" cursor="-1" desc="Cos" cat="Trig" type = "keyword" />
+	<Func name="Acos" formula="Math.acos()" cursor="-1" desc="ACos" cat="Trig" type = "keyword" />
+	<Func name="Tangent" formula="Math.tan()" cursor="-1" desc="Tan" cat="Trig" type = "keyword" />
+	<Func name="Atan" formula="Math.atan()" cursor="-1" desc="Atan" cat="Trig" type = "keyword" />
+	<Func name="Atan2" formula="Math.atan2( , )" cursor="-1" desc="Returns the angle (in radians) from the X axis to a point (y,x)."
+		cat="Trig" type = "keyword" />
+	<Func name="Ceil" formula="Math.ceil()" cursor="-1" desc="Returns the smallest integer greater than or equal to its numeric argument. "
+		cat="Trig" type = "keyword" />
+	<Func name="Exponent" formula="Math.exp( )" cursor="-1" desc="Returns e (the base of natural logarithms) raised to a power. "
+		cat="Trig" type = "keyword" />
+	<Func name="Floor" formula="Math.floor()" cursor="-1" desc="Returns the greatest integer less than or equal to its numeric argument."
+		cat="Trig" type = "keyword" />
+	<Func name="Log" formula="Math.log( )" cursor="-1" desc="Returns the natural logarithm of a number."
+		cat="Trig" type = "keyword" />
+	<Func name="Max" formula="Math.max( , , ,)" cursor="-5" desc="Returns the greater of zero or more supplied numeric expressions."
+		cat="Trig" type = "keyword" />
+	<Func name="Min" formula="Math.min( , , ,)" cursor="-3" desc="Returns the lesser of zero or more supplied numeric expressions."
+		cat="Trig" type = "keyword" />
+	<!-- Properties -->
+	<Func name="ln2" formula="Math.LN2" cursor="0" desc="ln2" cat="Trig" type = "keyword" />
+	<Func name="ln10" formula="Math.LN10" cursor="0" desc="ln10" cat="Trig" type = "keyword" />
+	<Func name="LOG10E " formula="Math.LOG10E" cursor="0" desc="Returns the base-10 logarithm of e, Euler's constant."
+		cat="Trig" type = "keyword" />
+	<Func name="Log2E" formula="Math.LOG2E" cursor="0" desc="Returns the base-2 logarithm of e, Euler's constant."
+		cat="Trig" type = "keyword" />
+	<Func name="Log10" formula="Math.LOG10E" cursor="0" desc="Returns the base-10 logarithm of e, Euler's constant."
+		cat="Trig" type = "keyword" />
+	<Func name="SQRT 1/2" formula="Math.SQRT1_2" cursor="0" desc="Returns the square root of 0.5, or one divided by the square root of 2."
+		cat="Trig" type = "keyword" />
+	<Func name="SQR2" formula="Math.sqrt( )" cursor="-1" desc="Returns the square root of 2."
+		cat="Trig" type = "keyword" />
+	<Func name="E" formula="Math.E" cursor="0" desc="E" cat="Trig" type = "keyword" />
+	<Func name="PI" formula="Math.PI" cursor="0" desc="PI" cat="Trig" type = "keyword" />
+	<Func name="Random" formula="Math.random( )" cursor="-1" desc="Returns a pseudorandom number between 0 and 1."
+		cat="Trig" type = "keyword"></Func>
+	<Func name="Round" formula="Math.round() " cursor="-1" desc="Returns a supplied numeric expression rounded to the nearest integer."
+		cat="Trig" type = "keyword"></Func>
+	<Func name="Sqrt" formula="Math.sqrt() " cursor="-1" desc="Returns the square root of a number."
+		cat="Trig" type = "keyword"></Func>
+	<Func name="To number" formula="Number()" cursor="-1" desc="An object representation of the number data type and placeholder for numeric constants."
+		cat="Trig" type = "keyword"></Func>
+
+	<!-- JScript Reserved word -->
+
+	<Func name="abstract" formula ="abstract" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="as" formula="as" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="boolean" formula="boolean" cursor="-1" desc=" At one stage it was planned that specific data types would be introduced into the Javascript language. boolean is one the data types that would have been able to be explicitly defined. To allow for this boolean was a reserved word. The plan to allow specific data types in Javascript no longer exists and boolean is therefore no longer on the reserved word list in the latest standards. Since many people still use earlier browsers where this was defined as a reserved word you should avoid using it." cat="JScript" type="keyword"></Func>
+	<Func name="break" formula="break" cursor="-1" desc="The break statement terminates execution of a block of code earlier than normal. It either breaks out of the closest block of code if by itself or it can break out of a labelled block at a higher level by specifying the name of the block to break out of. The most common use for the break statement is within a switch block where it is used to break out of the switch block after the appropriate code for the matching case has been run. Break is a reserved word and cannot be used for anything other than declaring a break statement." cat="JScript" type="keyword"></Func>
+	<Func name="byte" formula="byte" cursor="-1" desc="At one stage it was planned that specific data types would be introduced into the Javascript language. byte is one the data types that would have been able to be explicitly defined. To allow for this byte was a reserved word. The plan to allow specific data types in Javascript no longer exists and byte is therefore no longer on the reserved word list in the latest standards. Since many people still use earlier browsers where this was defined as a reserved word you should avoid using it." cat="JScript" type="keyword"></Func>
+	<Func name="case" formula="case" cursor="-1" desc="The case clause within a switch statement specifies one of the values that the switch statement can evaluate to. If the switch statement evaluates to this particular case value then the statements following the case label will be run. Case is a reserved word and cannot be used for anything other than declaring a case within a switch statement." cat="JScript" type="keyword"></Func>
+	<Func name="catch" formula="catch" cursor="-1" desc="The catch statement defines a block of code that will provide special error processing for a specified error if it occurred in the immediately preceding try block. Catch is a reserved word and cannot be used for anything other than declaring an error handler for a try block." cat="JScript" type="keyword"></Func>
+	<Func name="char" formula="char" cursor="-1" desc="At one stage it was planned that specific data types would be introduced into the Javascript language. char is one the data types that would have been able to be explicitly defined. To allow for this char was a reserved word. The plan to allow specific data types in Javascript no longer exists and char is therefore no longer on the reserved word list in the latest standards. Since many people still use earlier browsers where this was defined as a reserved word you should avoid using it." cat="JScript" type="keyword"></Func>
+	<Func name="class" formula="class" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="continue" formula="continue" cursor="-1" desc=" The continue statement is used within loops to bypass the rest of the code for the current run through the loop. With while (and do/while) loops it jumps to the spot in the loop where the while statement is evaluated again to see whether to continue around the loop. With for loops it jumps to the spot there the third statement in the for loop definition is run and continues from there. Continue is a reserved word and cannot be used for anything other than bypassing loop processing." cat="JScript" type="keyword"></Func>
+	<Func name="const" formula="const" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="debugger" formula="debugger" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="default" formula="default" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="delete" formula="delete" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="do" formula="do" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="double" formula="double" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="else" formula="else" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="enum" formula="enum" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="export" formula="export" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="extends" formula="extends" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="false" formula="false" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="final" formula="final" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="finally" formula="finally" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="float" formula="float" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="for" formula="for" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="function" formula="function" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="goto" formula="goto" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="if" formula="if" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="implements" formula="implements" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="import" formula="import" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="in" formula="in" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="instanceof" formula="instanceof" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="int" formula="int" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="interface" formula="interface" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="is" formula="is" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="long" formula="long" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="namespace" formula="namespace" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="native" formula="native" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="new" formula="new" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="null" formula="null" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="package" formula="package" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="private" formula="private" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="protected" formula="protected" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="public" formula="public" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="return" formula="return" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="short" formula="short" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="static" formula="static" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="super" formula="super" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="switch" formula="switch" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="synchronized" formula="synchronized" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="this" formula="this" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="throw" formula="throw" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="throws" formula="throws" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="transient" formula="transient" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="true" formula="true" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="try" formula="try" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="typeof" formula="typeof" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="use" formula="use" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="var" formula="var" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="void" formula="void" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="violatile" formula="violatile" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="while" formula="while" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+	<Func name="with" formula="with" cursor="-1" desc="" cat="JScript" type="keyword"></Func>
+
+	<!-- *** operators *** -->
+	<!--
+	+ plus
+	- minus
+	* multiplication
+	/ division
+	% modulus or remainder
+	-->
+	<Func name="=" formula="=" cursor="-1" desc="=" cat="Operator" type="operator" regex="="></Func>
+	<Func name="+" formula="+" cursor="-1" desc="plus" cat="Operator" type="operator" regex="[+]"></Func>
+	<Func name="-" formula="-" cursor="-1" desc="minus" cat="Operator" type="operator" regex="-"></Func>
+	<Func name="*" formula="*" cursor="-1" desc="multiplication" cat="Operator" type="operator" regex="[*]"></Func>
+	<Func name="&#0047;" formula="&#0047;" cursor="1" desc="division" cat="Operator" type="operator" regex="[/]"></Func>
+	
+	<!--
+	== is equal to
+	!= is not equal to
+	>  greater than
+	<  less than
+	>= greater than or equal to
+	<= less than or equal to
+	-->
+	<Func name="==" formula="==" cursor="1" desc="is equal to" cat="Operator" type="operator"></Func>
+	<Func name="!=" formula="!=" cursor="1" desc="is not equal to" cat="Operator" type="operator"></Func>
+	<Func name="&#0061;" formula="&#0061;" cursor="1" desc="greater than" cat="Operator" type="operator"></Func>
+	<Func name="&#0060;" formula="&#0060;" cursor="1" desc="less than" cat="Operator" type="operator"></Func>
+	<Func name="&#0061;=" formula="&#0061;=" cursor="2" desc="greater than or equal to" cat="Operator" type="operator"></Func>
+	<Func name="&#0060;=" formula="&#0060;=" cursor="2" desc="less than or equal to" cat="Operator" type="operator"></Func>
+
+	<!--
+	&& and
+    a == 2 && b == 2 both a and b are equal to 2
+    || or
+    a == 2 || b == 2 a is equal to 2 or b is equal to 2
+    ! not
+    !aa is not true, or a is false 
+	-->
+	<Func name="&#0038;&#0038;" formula="&#0038;&#0038;" cursor="2" desc="and" cat="Operator" type="operator"></Func>
+	<Func name="||" formula="||" cursor="2" desc="or" cat="Operator" type="operator"></Func>
+	<Func name="!" formula="!" cursor="1" desc="not" cat="Operator" type="operator"></Func>
+
+
+</Function>

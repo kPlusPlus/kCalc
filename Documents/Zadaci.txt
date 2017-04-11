@@ -1,0 +1,29 @@
+- napravi konverziju hex i bin brojeva
+- dodaj funkciju ln
+- dogradi statistièke funkcije
+
+- uredi stil
+
+--- napravi da su formule u iskoènom meniju
+	to može biti zasebna forma koja vraæa 
+	rezultate
+	
+	trebao bi se vidjeti i description
+--- isto tako jedan frame sa vidljivim varijablama i postavkama
+--- prozor sa switch postavkama kao npr. raèunanje u degradijanima/radijania
+	raèun u hex/bin/okt
+
+
+--- zaslon sa tipkicama neka se može suziti unutra van
+kao kod makromedije
+
+--- napravi da se mogu unositi varijable koje æe stajati u memoriji
+--- napravi da se mogu unjeti funkcije tipa	f(x) = 2*x+3a
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+--- onload ako ima uèitanih rezultata onda scrolaj na najzadnji rezultat
+--- onload ako je uèitana scripta onda je odma i color syntax
+--- VARIABLE
+		--- poseban object koji æe definirati sve varijable
