@@ -28,6 +28,8 @@ sve kao prema dosadašnjoj sintaxy jer tako je najbolje te se ne mora imati dva 
 * još napravi listu za varijable
 	npr. var a = 101;
 * farbanje koda
+	dodaj farbanje komentara
+	farbanje isto na timer recimo 2 sekunde
 * IntelliSense
 
 

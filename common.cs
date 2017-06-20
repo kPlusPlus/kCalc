@@ -91,14 +91,13 @@ namespace kCalc
     {
         public string Name;
         public int ValueType = 0;
-        public Int32 ValueInt;
+        public int ValueInt;
         public string ValueString;
 
         public VariableS()
         {
             // to do something
-        }
-        
+        }        
 
     }
 
