@@ -1,0 +1,12 @@
+{\rtf1\ansi\ansicpg1250\deff0\deflang1050{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red0\green128\blue0;\red255\green215\blue0;\red138\green43\blue226;\red128\green128\blue128;}
+\viewkind4\uc1\pard\cf1\f0\fs18 /* za testiranje */\cf2\par
+\cf3 var\cf2  ime \cf4 =\cf2  "Norton Ghost 12";\par
+\cf3 var\cf2  cijena \cf4 =\cf2  69;\par
+\cf4 //\cf2  samo linija \par
+\cf3 var\cf2  tecajUSD \cf4 =\cf2  4.67;\par
+\cf3 var\cf2  cijenaKuna \cf4 =\cf2  cijena \cf4 *\cf2  tecajUSD; \cf4 //\cf2  samo linija\par
+\cf3 var\cf2  strLabel \cf4 =\cf2  " program " \cf4 +\cf2  ime \cf4 +\cf2  " cijena: " \cf4 +\cf2  cijenaKuna \cf4 +\cf2  " kn";\par
+\par
+\cf4 //\cf2  samo linija\par
+}

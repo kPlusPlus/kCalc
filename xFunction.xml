@@ -161,5 +161,6 @@
   Comment in one ore more lines
 -->
   <Func name="comment_oneline" type="" regex="(?m)//.*$" ></Func>
+  <Func name="comment_moreline" type="" regex="(?s)/\\*.*?\\*/" ></Func>
 
 </Function>

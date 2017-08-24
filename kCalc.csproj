@@ -175,12 +175,14 @@
     </EmbeddedResource>
     <Content Include="App.ico" />
     <Content Include="Calc.ico" />
+    <Content Include="Documents\Zadaci.txt" />
     <Content Include="xFunction.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="icon\App.ico" />
     <Content Include="icon\Open.ico" />
     <Content Include="icon\save.ico" />
+    <None Include="Documents\test6.KRcal" />
     <None Include="images\tipka.jpg" />
     <Content Include="ToDo.txt" />
   </ItemGroup>
