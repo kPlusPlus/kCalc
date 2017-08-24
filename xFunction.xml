@@ -155,6 +155,11 @@
 	<Func name="&#0038;&#0038;" formula="&#0038;&#0038;" cursor="2" desc="and" cat="Operator" type="operator"></Func>
 	<Func name="||" formula="||" cursor="2" desc="or" cat="Operator" type="operator"></Func>
 	<Func name="!" formula="!" cursor="1" desc="not" cat="Operator" type="operator"></Func>
-
+  
+  
+<!--
+  Comment in one ore more lines
+-->
+  <Func name="comment_oneline" type="" regex="(?m)//.*$" ></Func>
 
 </Function>

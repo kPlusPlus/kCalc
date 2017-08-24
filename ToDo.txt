@@ -57,7 +57,12 @@ DEBUG
 ----------
 
 	ispravi jer sada LoadObjects pregazi učitani file
-	
 
+	--- TESTIRAJ printanje jedne ili više strana
+
+	--- TESTIRAJ comment line
 
 --- napravi da radi pod više programskih jezika
+
+
+
