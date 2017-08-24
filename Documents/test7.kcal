@@ -1,0 +1,2 @@
+var broj = 123;
+var result = broj * 1.23;

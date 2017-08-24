@@ -1,0 +1,3 @@
+var broj = 123;
+var result = broj * 1.23;
+var sve = result + 1001;

@@ -57,7 +57,7 @@ namespace kCalc
 			try
 			{
 				o = Eval.JScriptEvaluate(expr,engine);
-				return o.ToString();			
+				return o.ToString();
 			}
 			catch(Exception ex)
 			{
