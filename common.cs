@@ -14,90 +14,113 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Xml;
 using System.Text;
+using System.Collections.Specialized;
+using System.Text.RegularExpressions;
 
 namespace kCalc
 {
-	/// <summary>
-	/// kCalc --- mmodul for run JavaScript
-	/// </summary>
-	public class common
-	{                
-		// INIT
-		public common()
-		{			
-			// on INIT load all ReservedWords
-		}
+    /// <summary>
+    /// kCalc --- mmodul for run JavaScript
+    /// </summary>
+    public class common
+    {
+        // INIT
+        public common()
+        {
+            // on INIT load all ReservedWords
+        }
 
         public VariableS[] Variables;
         private VariableS _Var;
         public FunctionS[] Functions;
         private FunctionS _Fun;
 
-		[System.Runtime.InteropServices.DllImport("user32.DLL")]
-		private extern static int SendMessage( 
-			System.IntPtr hWnd, int wMsg, 
-			int wParam, string lParam);
+        [System.Runtime.InteropServices.DllImport("user32.DLL")]
+        private extern static int SendMessage(
+            System.IntPtr hWnd, int wMsg,
+            int wParam, string lParam);
 
 
-		public void TextBoxScroll(TextBox tb,long HorizScroll,long VertScroll )
-		{
-			SendMessage( (IntPtr) tb.Handle,182,(int) HorizScroll,VertScroll.ToString());
-		}
+        public void TextBoxScroll(TextBox tb, long HorizScroll, long VertScroll)
+        {
+            SendMessage((IntPtr)tb.Handle, 182, (int)HorizScroll, VertScroll.ToString());
+        }
 
 
-		public string backResult(string formula)
-		{
-			formula = formula.Replace(Environment.NewLine,"");
-			formula = formula.Replace("\n", null);
-			string expr = @" var bEval = eval('" + formula + "','unsafe');	";            
-			
-			VsaEngine engine = VsaEngine.CreateEngine();            
-			object o = null;
-			
-			try
-			{
-				o = Eval.JScriptEvaluate(expr,engine);
-				return o.ToString();
-			}
-			catch(Exception ex)
-			{
-				return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
-			}
-		}
+        public string backResult(string formula)
+        {
+            formula = formula.Replace(Environment.NewLine, "");
+            formula = formula.Replace("\n", null);
+            string expr = @" var bEval = eval('" + formula + "','unsafe');	";
 
-			   
-		/* * * new options * * */
-		public static CompilerResults CompileCode(CodeDomProvider provider,
-												  String sourceFile,
-												  String exeFile)
-		{
-			// Configure a CompilerParameters that links System.dll
-			// and produces the specified executable file.
-			String[] referenceAssemblies = { "System.dll" };
-			CompilerParameters cp = new CompilerParameters(referenceAssemblies,
-														   exeFile, false);
-			// Generate an executable rather than a DLL file.
-			cp.GenerateExecutable = true;
+            VsaEngine engine = VsaEngine.CreateEngine();
+            object o = null;
 
-			// Invoke compilation.
-			CompilerResults cr = provider.CompileAssemblyFromFile(cp, sourceFile);
-			// Return the results of compilation.
-			return cr;
-		}
+            try
+            {
+                o = Eval.JScriptEvaluate(expr, engine);
+                return o.ToString();
+            }
+            catch (Exception ex)
+            {
+                return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
+            }
+        }
 
-	}
+        public void SetVariable(string sCont)
+        {
+            StringCollection resultList = new StringCollection();
+
+            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})", RegexOptions.Multiline | RegexOptions.ExplicitCapture);
+            Match matchResult = regexObj.Match(sCont);
+            while (matchResult.Success)
+            {
+                if (Variables == null)
+                    Variables = new VariableS[] { };
+                int count = Variables.Length;                
+                Array.Resize(ref Variables, count + 1);
+                Variables[count] = new VariableS();
+                Variables[count].Name = matchResult.Groups[1].Value;                
+
+                matchResult.NextMatch();
+            }
+
+        }
+
+
+        /* * * new options * * */
+        public static CompilerResults CompileCode(CodeDomProvider provider,
+                                                  String sourceFile,
+                                                  String exeFile)
+        {
+            // Configure a CompilerParameters that links System.dll
+            // and produces the specified executable file.
+            String[] referenceAssemblies = { "System.dll" };
+            CompilerParameters cp = new CompilerParameters(referenceAssemblies,
+                                                           exeFile, false);
+            // Generate an executable rather than a DLL file.
+            cp.GenerateExecutable = true;
+
+            // Invoke compilation.
+            CompilerResults cr = provider.CompileAssemblyFromFile(cp, sourceFile);
+            // Return the results of compilation.
+            return cr;
+        }
+
+    }
 
     public class VariableS
     {
         public string Name;
         public int ValueType = 0;
-        public int ValueInt;
         public string ValueString;
+        public int ValueInt;
+
 
         public VariableS()
         {
             // to do something
-        }        
+        }
 
     }
 
