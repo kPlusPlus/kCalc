@@ -119,6 +119,7 @@
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing">
       <Name>System.Drawing</Name>
     </Reference>
@@ -140,6 +141,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="common.cs">
+    </Compile>
+    <Compile Include="dsVariables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVariables.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -194,6 +200,17 @@
     <None Include="Documents\test6.KRcal" />
     <None Include="Documents\test7.kcal" />
     <None Include="Documents\test8.kcal" />
+    <None Include="dsVariables.xsc">
+      <DependentUpon>dsVariables.xsd</DependentUpon>
+    </None>
+    <None Include="dsVariables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVariables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsVariables.xss">
+      <DependentUpon>dsVariables.xsd</DependentUpon>
+    </None>
     <None Include="images\tipka.jpg" />
     <Content Include="ToDo.txt" />
   </ItemGroup>

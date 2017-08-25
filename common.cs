@@ -86,8 +86,12 @@ namespace kCalc
                 Variables[count].Name = m.Groups["varname"].Value;
                 string varval = m.Groups["varval"].Value.Replace(".", ",");
                 Variables[count].ValueDouble = Double.Parse( varval );
-            }            
+            }
 
+            //Form frm = new frmValue();
+            frmValue frm = new frmValue();
+            frm.com = this;
+            frm.Show();
         }
 
 
