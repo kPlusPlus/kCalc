@@ -71,19 +71,22 @@ namespace kCalc
         {
             StringCollection resultList = new StringCollection();
 
-            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})", RegexOptions.Multiline | RegexOptions.ExplicitCapture);
-            Match matchResult = regexObj.Match(sCont);
-            while (matchResult.Success)
+            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})\s{0,3};", RegexOptions.Multiline | RegexOptions.ExplicitCapture);
+            //Match matchResult = regexObj.Match(sCont);
+            MatchCollection mc = regexObj.Matches(sCont);
+
+            foreach(Match m in mc)
             {
+                //MessageBox.Show(m.Groups["varname"].Value);
                 if (Variables == null)
                     Variables = new VariableS[] { };
-                int count = Variables.Length;                
+                int count = Variables.Length;
                 Array.Resize(ref Variables, count + 1);
                 Variables[count] = new VariableS();
-                Variables[count].Name = matchResult.Groups[1].Value;                
-
-                matchResult.NextMatch();
-            }
+                Variables[count].Name = m.Groups["varname"].Value;
+                string varval = m.Groups["varval"].Value.Replace(".", ",");
+                Variables[count].ValueDouble = Double.Parse( varval );
+            }            
 
         }
 
@@ -115,6 +118,7 @@ namespace kCalc
         public int ValueType = 0;
         public string ValueString;
         public int ValueInt;
+        public Double ValueDouble;
 
 
         public VariableS()
