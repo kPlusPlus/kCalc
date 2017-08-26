@@ -30,11 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsVariables1 = new kCalc.dsVariables();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valDoubleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsVariables1 = new kCalc.dsVariables();
+            this.valueTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valIntDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).BeginInit();
@@ -51,14 +53,26 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.valDoubleDataGridViewTextBoxColumn});
-            this.dataGridView1.DataMember = "Variables";
+            this.valDoubleDataGridViewTextBoxColumn,
+            this.valueTypeDataGridViewTextBoxColumn,
+            this.valIntDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dsVariables1BindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1104, 508);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // dsVariables1BindingSource
+            // 
+            this.dsVariables1BindingSource.AllowNew = true;
+            this.dsVariables1BindingSource.DataMember = "Variables";
+            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
+            // 
+            // dsVariables1
+            // 
+            this.dsVariables1.DataSetName = "dsVariables";
+            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -78,16 +92,17 @@
             this.valDoubleDataGridViewTextBoxColumn.HeaderText = "ValDouble";
             this.valDoubleDataGridViewTextBoxColumn.Name = "valDoubleDataGridViewTextBoxColumn";
             // 
-            // dsVariables1BindingSource
+            // valueTypeDataGridViewTextBoxColumn
             // 
-            this.dsVariables1BindingSource.AllowNew = true;
-            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
-            this.dsVariables1BindingSource.Position = 0;
+            this.valueTypeDataGridViewTextBoxColumn.DataPropertyName = "ValueType";
+            this.valueTypeDataGridViewTextBoxColumn.HeaderText = "ValueType";
+            this.valueTypeDataGridViewTextBoxColumn.Name = "valueTypeDataGridViewTextBoxColumn";
             // 
-            // dsVariables1
+            // valIntDataGridViewTextBoxColumn
             // 
-            this.dsVariables1.DataSetName = "dsVariables";
-            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.valIntDataGridViewTextBoxColumn.DataPropertyName = "ValInt";
+            this.valIntDataGridViewTextBoxColumn.HeaderText = "ValInt";
+            this.valIntDataGridViewTextBoxColumn.Name = "valIntDataGridViewTextBoxColumn";
             // 
             // frmValue
             // 
@@ -105,11 +120,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valDoubleDataGridViewTextBoxColumn;
         public System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.BindingSource dsVariables1BindingSource;
         public dsVariables dsVariables1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valDoubleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valueTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valIntDataGridViewTextBoxColumn;
     }
 }

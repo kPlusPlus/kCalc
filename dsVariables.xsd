@@ -12,16 +12,22 @@
   <xs:element name="dsVariables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVariables" msprop:Generator_UserDSName="dsVariables">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Variables" msprop:Generator_TableClassName="VariablesDataTable" msprop:Generator_TableVarName="tableVariables" msprop:Generator_RowChangedName="VariablesRowChanged" msprop:Generator_TablePropName="Variables" msprop:Generator_RowDeletingName="VariablesRowDeleting" msprop:Generator_RowChangingName="VariablesRowChanging" msprop:Generator_RowEvHandlerName="VariablesRowChangeEventHandler" msprop:Generator_RowDeletedName="VariablesRowDeleted" msprop:Generator_RowClassName="VariablesRow" msprop:Generator_UserTableName="Variables" msprop:Generator_RowEvArgName="VariablesRowChangeEvent">
+        <xs:element name="Variables" msprop:Generator_TableClassName="VariablesDataTable" msprop:Generator_TableVarName="tableVariables" msprop:Generator_TablePropName="Variables" msprop:Generator_RowDeletingName="VariablesRowDeleting" msprop:Generator_RowChangingName="VariablesRowChanging" msprop:Generator_RowEvHandlerName="VariablesRowChangeEventHandler" msprop:Generator_RowDeletedName="VariablesRowDeleted" msprop:Generator_UserTableName="Variables" msprop:Generator_RowChangedName="VariablesRowChanged" msprop:Generator_RowEvArgName="VariablesRowChangeEvent" msprop:Generator_RowClassName="VariablesRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
               <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
-              <xs:element name="ValDouble" msprop:Generator_ColumnVarNameInTable="columnValDouble" msprop:Generator_ColumnPropNameInRow="ValDouble" msprop:Generator_ColumnPropNameInTable="ValDoubleColumn" msprop:Generator_UserColumnName="ValDouble" type="xs:string" minOccurs="0" />
+              <xs:element name="ValDouble" msprop:Generator_ColumnVarNameInTable="columnValDouble" msprop:Generator_ColumnPropNameInRow="ValDouble" msprop:Generator_ColumnPropNameInTable="ValDoubleColumn" msprop:Generator_UserColumnName="ValDouble" type="xs:double" minOccurs="0" />
+              <xs:element name="ValueType" msprop:Generator_ColumnVarNameInTable="columnValueType" msprop:Generator_ColumnPropNameInRow="ValueType" msprop:Generator_ColumnPropNameInTable="ValueTypeColumn" msprop:Generator_UserColumnName="ValueType" type="xs:int" minOccurs="0" />
+              <xs:element name="ValInt" msprop:Generator_ColumnVarNameInTable="columnValInt" msprop:Generator_ColumnPropNameInRow="ValInt" msprop:Generator_ColumnPropNameInTable="ValIntColumn" msprop:Generator_UserColumnName="ValInt" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Variables" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
   </xs:element>
 </xs:schema>

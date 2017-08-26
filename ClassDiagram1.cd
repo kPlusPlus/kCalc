@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="kCalc.About">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="7.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACACAEAAAACAAAACAAAAAAAAIAAAAAAAAAQ=</HashCode>
       <FileName>About.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.common">
-    <Position X="2.5" Y="2.75" Width="2" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAACAAAAYAAQAAAAAGAAQAAAgAAAA=</HashCode>
       <FileName>common.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.FormKCalc">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <NestedTypes>
       <Delegate Name="kCalc.FormKCalc.ParseAllGeneral" Collapsed="true">
         <TypeIdentifier>
@@ -29,27 +29,27 @@
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.Properties.Resources">
-    <Position X="2.25" Y="5.75" Width="2.75" />
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.frmValue">
-    <Position X="6.5" Y="1" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAACCACAAAAAACAAQACAAgAAAAAgAAAAAgAAAA=</HashCode>
       <FileName>frmValue.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.VariableS">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAQAAAAAAAAAAASAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <HashCode>AQAAEAAAAAQAAAAAAAAAAASAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>common.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="kCalc.FunctionS">
-    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>common.cs</FileName>

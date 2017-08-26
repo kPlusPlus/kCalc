@@ -285,6 +285,10 @@ namespace kCalc {
             
             private global::System.Data.DataColumn columnValDouble;
             
+            private global::System.Data.DataColumn columnValueType;
+            
+            private global::System.Data.DataColumn columnValInt;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public VariablesDataTable() {
@@ -344,6 +348,22 @@ namespace kCalc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ValueTypeColumn {
+                get {
+                    return this.columnValueType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ValIntColumn {
+                get {
+                    return this.columnValInt;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -379,15 +399,24 @@ namespace kCalc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VariablesRow AddVariablesRow(string Name, string ValDouble) {
+            public VariablesRow AddVariablesRow(string Name, double ValDouble, int ValueType, int ValInt) {
                 VariablesRow rowVariablesRow = ((VariablesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Name,
-                        ValDouble};
+                        ValDouble,
+                        ValueType,
+                        ValInt};
                 rowVariablesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowVariablesRow);
                 return rowVariablesRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public VariablesRow FindByID(int ID) {
+                return ((VariablesRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -410,6 +439,8 @@ namespace kCalc {
                 this.columnID = base.Columns["ID"];
                 this.columnName = base.Columns["Name"];
                 this.columnValDouble = base.Columns["ValDouble"];
+                this.columnValueType = base.Columns["ValueType"];
+                this.columnValInt = base.Columns["ValInt"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -419,10 +450,18 @@ namespace kCalc {
                 base.Columns.Add(this.columnID);
                 this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName);
-                this.columnValDouble = new global::System.Data.DataColumn("ValDouble", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnValDouble = new global::System.Data.DataColumn("ValDouble", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValDouble);
+                this.columnValueType = new global::System.Data.DataColumn("ValueType", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValueType);
+                this.columnValInt = new global::System.Data.DataColumn("ValInt", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValInt);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
                 this.columnID.AutoIncrement = true;
                 this.columnID.AutoIncrementSeed = 1;
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
                 this.columnName.AllowDBNull = false;
             }
             
@@ -568,12 +607,7 @@ namespace kCalc {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ID {
                 get {
-                    try {
-                        return ((int)(this[this.tableVariables.IDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'Variables\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableVariables.IDColumn]));
                 }
                 set {
                     this[this.tableVariables.IDColumn] = value;
@@ -593,10 +627,10 @@ namespace kCalc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ValDouble {
+            public double ValDouble {
                 get {
                     try {
-                        return ((string)(this[this.tableVariables.ValDoubleColumn]));
+                        return ((double)(this[this.tableVariables.ValDoubleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ValDouble\' in table \'Variables\' is DBNull.", e);
@@ -609,14 +643,34 @@ namespace kCalc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tableVariables.IDColumn);
+            public int ValueType {
+                get {
+                    try {
+                        return ((int)(this[this.tableVariables.ValueTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ValueType\' in table \'Variables\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVariables.ValueTypeColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetIDNull() {
-                this[this.tableVariables.IDColumn] = global::System.Convert.DBNull;
+            public int ValInt {
+                get {
+                    try {
+                        return ((int)(this[this.tableVariables.ValIntColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ValInt\' in table \'Variables\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableVariables.ValIntColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -629,6 +683,30 @@ namespace kCalc {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetValDoubleNull() {
                 this[this.tableVariables.ValDoubleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsValueTypeNull() {
+                return this.IsNull(this.tableVariables.ValueTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetValueTypeNull() {
+                this[this.tableVariables.ValueTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsValIntNull() {
+                return this.IsNull(this.tableVariables.ValIntColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetValIntNull() {
+                this[this.tableVariables.ValIntColumn] = global::System.Convert.DBNull;
             }
         }
         

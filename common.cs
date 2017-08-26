@@ -86,8 +86,9 @@ namespace kCalc
                 Array.Resize(ref Variables, count + 1);
                 Variables[count] = new VariableS();
                 Variables[count].Name = m.Groups["varname"].Value;
-                string varval = m.Groups["varval"].Value.Replace(".", ",");
-                Variables[count].ValueDouble = Double.Parse( varval );
+                //string varval = m.Groups["varval"].Value.Replace(".", ",");
+                //Variables[count].ValueDouble = double.Parse( varval );
+                Variables[count].Parsiralica(m.Groups["varval"].Value);
             }
 
             //Form frm = new frmValue();
@@ -101,7 +102,9 @@ namespace kCalc
             {
                 dr = dsv.Tables["Variables"].NewRow();
                 dr["Name"] = Variables[i].Name;
+                dr["ValInt"] = Variables[i].ValueInt;
                 dr["ValDouble"] = Variables[i].ValueDouble;
+                dr["ValueType"] = Variables[i].ValueType;
                 dsv.Tables["Variables"].Rows.Add(dr);
             }
 
@@ -139,12 +142,29 @@ namespace kCalc
         public int ValueType = 0;
         public string ValueString;
         public int ValueInt;
-        public Double ValueDouble;
+        public double ValueDouble;
 
 
         public VariableS()
         {
             // to do something
+        }
+
+        //TODO testiraj parsiralicu
+        public void Parsiralica(string sNumber)
+        {
+            if (Int32.TryParse(sNumber, out ValueInt) == true)
+            {
+                ValueType = 1;
+                return;
+            }
+            string varval = sNumber.Replace(".", ",");
+            if (double.TryParse(varval, out ValueDouble) == true)
+            {
+                ValueType = 2;
+                return;
+            }
+
         }
 
     }
