@@ -54,9 +54,10 @@
             this.valDoubleDataGridViewTextBoxColumn});
             this.dataGridView1.DataMember = "Variables";
             this.dataGridView1.DataSource = this.dsVariables1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1080, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(1104, 508);
             this.dataGridView1.TabIndex = 0;
             // 
             // iDDataGridViewTextBoxColumn
@@ -79,6 +80,7 @@
             // 
             // dsVariables1BindingSource
             // 
+            this.dsVariables1BindingSource.AllowNew = true;
             this.dsVariables1BindingSource.DataSource = this.dsVariables1;
             this.dsVariables1BindingSource.Position = 0;
             // 

@@ -75,6 +75,8 @@ namespace kCalc
             //Match matchResult = regexObj.Match(sCont);
             MatchCollection mc = regexObj.Matches(sCont);
 
+            if (Variables != null) Variables = null;
+
             foreach(Match m in mc)
             {
                 //MessageBox.Show(m.Groups["varname"].Value);
@@ -93,7 +95,7 @@ namespace kCalc
             frm.com = this;
 
             dsVariables dsv = new dsVariables();
-            DataRow dr; //= dsv.Tables["Variables"].NewRow();
+            DataRow dr;
 
             for(int i = 0; i < Variables.Length; i++)
             {
@@ -106,7 +108,7 @@ namespace kCalc
             dsv.WriteXml("Variables.xml");
             frm.dsVariables1BindingSource.DataSource = dsv;
 
-            frm.Show();
+            frm.Show();            
         }
 
 
