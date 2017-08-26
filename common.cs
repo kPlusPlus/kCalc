@@ -91,6 +91,21 @@ namespace kCalc
             //Form frm = new frmValue();
             frmValue frm = new frmValue();
             frm.com = this;
+
+            dsVariables dsv = new dsVariables();
+            DataRow dr; //= dsv.Tables["Variables"].NewRow();
+
+            for(int i = 0; i < Variables.Length; i++)
+            {
+                dr = dsv.Tables["Variables"].NewRow();
+                dr["Name"] = Variables[i].Name;
+                dr["ValDouble"] = Variables[i].ValueDouble;
+                dsv.Tables["Variables"].Rows.Add(dr);
+            }
+
+            dsv.WriteXml("Variables.xml");
+            frm.dsVariables1BindingSource.DataSource = dsv;
+
             frm.Show();
         }
 

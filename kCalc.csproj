@@ -142,6 +142,9 @@
     </Compile>
     <Compile Include="common.cs">
     </Compile>
+    <Compile Include="dsVariables.cs">
+      <DependentUpon>dsVariables.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsVariables.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dsVariables1 = new kCalc.dsVariables();
-            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valDoubleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsVariables1 = new kCalc.dsVariables();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -59,16 +59,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1080, 484);
             this.dataGridView1.TabIndex = 0;
             // 
-            // dsVariables1
-            // 
-            this.dsVariables1.DataSetName = "dsVariables";
-            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dsVariables1BindingSource
-            // 
-            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
-            this.dsVariables1BindingSource.Position = 0;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -87,6 +77,16 @@
             this.valDoubleDataGridViewTextBoxColumn.HeaderText = "ValDouble";
             this.valDoubleDataGridViewTextBoxColumn.Name = "valDoubleDataGridViewTextBoxColumn";
             // 
+            // dsVariables1BindingSource
+            // 
+            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
+            this.dsVariables1BindingSource.Position = 0;
+            // 
+            // dsVariables1
+            // 
+            this.dsVariables1.DataSetName = "dsVariables";
+            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // frmValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,19 +96,18 @@
             this.Name = "frmValue";
             this.Text = "Values list";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn valDoubleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource dsVariables1BindingSource;
-        private dsVariables dsVariables1;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.BindingSource dsVariables1BindingSource;
+        public dsVariables dsVariables1;
     }
 }
