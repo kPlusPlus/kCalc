@@ -34,6 +34,7 @@ namespace kCalc
         private VariableS _Var;
         public FunctionS[] Functions;
         private FunctionS _Fun;
+        private string fileVariables = "Variables.xml";
 
         [System.Runtime.InteropServices.DllImport("user32.DLL")]
         private extern static int SendMessage(
@@ -96,6 +97,8 @@ namespace kCalc
             frm.com = this;
 
             dsVariables dsv = new dsVariables();
+            if (System.IO.File.Exists(fileVariables))
+                dsv.ReadXml(fileVariables);
             DataRow dr;
 
             for(int i = 0; i < Variables.Length; i++)
@@ -108,7 +111,9 @@ namespace kCalc
                 dsv.Tables["Variables"].Rows.Add(dr);
             }
 
-            dsv.WriteXml("Variables.xml");
+            DataTable dt = RemoveDuplicateRows(dsv.Tables["Variables"], "Name");
+
+            dsv.WriteXml( fileVariables );
             frm.dsVariables1BindingSource.DataSource = dsv;
 
             frm.Show();            
@@ -132,6 +137,30 @@ namespace kCalc
             CompilerResults cr = provider.CompileAssemblyFromFile(cp, sourceFile);
             // Return the results of compilation.
             return cr;
+        }
+
+
+        public DataTable RemoveDuplicateRows(DataTable dTable, string colName)
+        {
+            Hashtable hTable = new Hashtable();
+            ArrayList duplicateList = new ArrayList();
+
+            //Add list of all the unique item value to hashtable, which stores combination of key, value pair.
+            //And add duplicate item value in arraylist.
+            foreach (DataRow drow in dTable.Rows)
+            {
+                if (hTable.Contains(drow[colName]))
+                    duplicateList.Add(drow);
+                else
+                    hTable.Add(drow[colName], string.Empty);
+            }
+
+            //Removing a list of duplicate items from datatable.
+            foreach (DataRow dRow in duplicateList)
+                dTable.Rows.Remove(dRow);
+
+            //Datatable which contains unique records will be return as output.
+            return dTable;
         }
 
     }
