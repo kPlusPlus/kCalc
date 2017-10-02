@@ -1,0 +1,9 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset238 Tahoma;}{\f1\fnil\fcharset0 Tahoma;}}
+{\colortbl ;\red138\green43\blue226;\red255\green215\blue0;\red128\green128\blue128;}
+\viewkind4\uc1\pard\cf1\lang1050\f0\fs18 var\cf2  Result \cf3 =\cf2  0;\lang1033\f1\par
+\cf1 var\cf2  jedan \cf3 =\cf2  1.3;\par
+\cf1 var\cf2  dva \cf3 =\cf2  2.3;\par
+\cf1 var\cf2  tri \cf3 =\cf2  3;\par
+\cf1 var\cf2  ceti_ri \cf3 =\cf2  4.126;\par
+\cf1 var\cf2  ime \cf3 =\cf2  "Pero"; \par
+}

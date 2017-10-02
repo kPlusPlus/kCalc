@@ -49,6 +49,7 @@ dokani objekti da se vrate u format istovjetan onom prije dock.fill
 -- save all user parameter from form in binary formatter object file and reload it !!!
 
 -- opcija snimanja i text boxa resultat i doljnjeg ovisno prema izvoru context menua kao parrenta
+	ne radi uvijek, testirati
 +++ postavio automatsku opciju da se textovi iz oba text i rtf boxa automatski snimaju u binnary formater
 	i kod svakog ponovnog pokretanja vraćaju
 	

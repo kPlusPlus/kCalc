@@ -193,6 +193,7 @@
     </EmbeddedResource>
     <Content Include="App.ico" />
     <Content Include="Calc.ico" />
+    <Content Include="Documents\varijable_regex.txt" />
     <Content Include="Documents\Zadaci.txt" />
     <Content Include="xFunction.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -203,6 +204,7 @@
     <None Include="Documents\test6.KRcal" />
     <None Include="Documents\test7.kcal" />
     <None Include="Documents\test8.kcal" />
+    <None Include="Documents\test_var1.kcal" />
     <None Include="dsVariables.xsc">
       <DependentUpon>dsVariables.xsd</DependentUpon>
     </None>
