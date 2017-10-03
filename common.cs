@@ -72,27 +72,22 @@ namespace kCalc
         {
             StringCollection resultList = new StringCollection();
 
-            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})\s{0,3};", RegexOptions.Multiline | RegexOptions.ExplicitCapture);
-            //Match matchResult = regexObj.Match(sCont);
+            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})\s{0,3};", RegexOptions.Multiline | RegexOptions.ExplicitCapture);            
             MatchCollection mc = regexObj.Matches(sCont);
 
             if (Variables != null) Variables = null;
 
             foreach(Match m in mc)
-            {
-                //MessageBox.Show(m.Groups["varname"].Value);
+            {                
                 if (Variables == null)
                     Variables = new VariableS[] { };
                 int count = Variables.Length;
                 Array.Resize(ref Variables, count + 1);
                 Variables[count] = new VariableS();
                 Variables[count].Name = m.Groups["varname"].Value;
-                //string varval = m.Groups["varval"].Value.Replace(".", ",");
-                //Variables[count].ValueDouble = double.Parse( varval );
                 Variables[count].Parsiralica(m.Groups["varval"].Value);
             }
 
-            //Form frm = new frmValue();
             frmValue frm = new frmValue();
             frm.com = this;
 
@@ -104,6 +99,7 @@ namespace kCalc
             for(int i = 0; i < Variables.Length; i++)
             {
                 dr = dsv.Tables["Variables"].NewRow();
+                
                 dr["Name"] = Variables[i].Name;
                 dr["ValInt"] = Variables[i].ValueInt;
                 dr["ValDouble"] = Variables[i].ValueDouble;
@@ -193,6 +189,7 @@ namespace kCalc
                 ValueType = 2;
                 return;
             }
+            
 
         }
 

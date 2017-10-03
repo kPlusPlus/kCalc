@@ -67,3 +67,6 @@ DEBUG
 
 
 
+------ riješi variable editor i ostalih tipova varijabli
+i vraćanje varijabli na formu
+------ scriptengine da proradi i za ostale compilere
