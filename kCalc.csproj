@@ -98,6 +98,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSSCodeProvider.v4.6">
+      <HintPath>priprema\cs-script\lib\CSSCodeProvider.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="CSScriptLibrary">
+      <HintPath>priprema\cs-script\lib\CSScriptLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="FSharp.Compiler.CodeDom, Version=1.0.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\FSharp.Compiler.CodeDom.1.0.0.1\lib\net40\FSharp.Compiler.CodeDom.dll</HintPath>
       <Private>True</Private>
@@ -109,6 +115,9 @@
     <Reference Include="Microsoft.Vsa">
       <Name>Microsoft.Vsa</Name>
       <HintPath>Microsoft.Vsa.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp">
+      <HintPath>priprema\cs-script\lib\Mono.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
