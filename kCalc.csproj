@@ -98,12 +98,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSSCodeProvider.v4.6">
-      <HintPath>priprema\cs-script\lib\CSSCodeProvider.v4.6.dll</HintPath>
-    </Reference>
-    <Reference Include="CSScriptLibrary">
-      <HintPath>priprema\cs-script\lib\CSScriptLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.Compiler.CodeDom, Version=1.0.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\FSharp.Compiler.CodeDom.1.0.0.1\lib\net40\FSharp.Compiler.CodeDom.dll</HintPath>
       <Private>True</Private>
@@ -115,9 +109,6 @@
     <Reference Include="Microsoft.Vsa">
       <Name>Microsoft.Vsa</Name>
       <HintPath>Microsoft.Vsa.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CSharp">
-      <HintPath>priprema\cs-script\lib\Mono.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -168,27 +159,6 @@
     <Compile Include="frmValue.Designer.cs">
       <DependentUpon>frmValue.cs</DependentUpon>
     </Compile>
-    <Compile Include="priprema\bin\Debug\sample.cs" />
-    <Compile Include="priprema\nscript.lib\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscript.lib\BaseApp.cs" />
-    <Compile Include="priprema\nscript.lib\CompilerError.cs" />
-    <Compile Include="priprema\nscript.lib\IScriptManager.cs" />
-    <Compile Include="priprema\nscript.lib\IScriptManagerCallback.cs" />
-    <Compile Include="priprema\nscript.lib\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="priprema\nscript.lib\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="priprema\nscript.lib\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="priprema\nscript.lib\ScriptManager.cs" />
-    <Compile Include="priprema\nscript.lib\UnsupportedLanguageExecption.cs" />
-    <Compile Include="priprema\nscriptw\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscriptw\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="priprema\nscriptw\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="priprema\nscriptw\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="priprema\nscriptw\WindowsApp.cs" />
-    <Compile Include="priprema\nscript\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscript\ConsoleApp.cs" />
-    <Compile Include="priprema\nscript\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="priprema\nscript\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="priprema\nscript\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -216,8 +186,6 @@
     <EmbeddedResource Include="frmValue.resx">
       <DependentUpon>frmValue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="priprema\nscript.lib\NScript.resx" />
-    <EmbeddedResource Include="priprema\nscript.lib\obj\Debug\NScript.NScript.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -227,44 +195,6 @@
     <Content Include="Calc.ico" />
     <Content Include="Documents\varijable_regex.txt" />
     <Content Include="Documents\Zadaci.txt" />
-    <Content Include="priprema\about.gif" />
-    <Content Include="priprema\about.jpg" />
-    <Content Include="priprema\background.jpg" />
-    <Content Include="priprema\bin\Debug\NScriptw.vshost.exe" />
-    <Content Include="priprema\CALC8305.jpg" />
-    <Content Include="priprema\Corel Auto-Preserve\nove boje.png" />
-    <Content Include="priprema\expences-button-png-hi.png" />
-    <Content Include="priprema\icon\ni0043-48.gif" />
-    <Content Include="priprema\icon\ni0044-48.gif" />
-    <Content Include="priprema\icon\ni0045-48.gif" />
-    <Content Include="priprema\icon\ni0046-48.gif" />
-    <Content Include="priprema\icon\ni0048-48.gif" />
-    <Content Include="priprema\icon\ni0069-48.gif" />
-    <Content Include="priprema\icon\ni0104-48.gif" />
-    <Content Include="priprema\icon\variables.png" />
-    <Content Include="priprema\icon\wi0143-48.gif" />
-    <Content Include="priprema\icon\wi0160-48.gif" />
-    <Content Include="priprema\kalkulator_place.png" />
-    <Content Include="priprema\nove boje.png" />
-    <Content Include="priprema\nscript.lib\NScriptLib.csproj" />
-    <Content Include="priprema\nscript.lib\obj\Debug\NScriptLib.csproj.FileListAbsolute.txt" />
-    <Content Include="priprema\nscript.sln" />
-    <Content Include="priprema\nscriptw\App.ico" />
-    <Content Include="priprema\nscriptw\NScriptW.csproj" />
-    <Content Include="priprema\nscriptw\obj\Debug\NScriptW.csproj.FileListAbsolute.txt" />
-    <Content Include="priprema\nscript\App.ico" />
-    <Content Include="priprema\nscript\NScript.csproj" />
-    <Content Include="priprema\nscript\obj\Debug\NScript.csproj.FileListAbsolute.txt" />
-    <Content Include="priprema\open.gif" />
-    <Content Include="priprema\open.ico" />
-    <Content Include="priprema\open.jpg" />
-    <Content Include="priprema\proba.gif" />
-    <Content Include="priprema\ReservedWord_JavaScript.txt" />
-    <Content Include="priprema\save.gif" />
-    <Content Include="priprema\save.ico" />
-    <Content Include="priprema\save.jpg" />
-    <Content Include="priprema\tipkaBar.jpg" />
-    <Content Include="priprema\variables.png" />
     <Content Include="xFunction.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -293,49 +223,6 @@
     <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
-    <None Include="priprema\About.doc" />
-    <None Include="priprema\About.pspimage" />
-    <None Include="priprema\About.rtf" />
-    <None Include="priprema\about_2.pspimage" />
-    <None Include="priprema\background.pspimage" />
-    <None Include="priprema\background2.pspimage" />
-    <None Include="priprema\Backup_of_kCalc GUI.cdr" />
-    <None Include="priprema\Backup_of_tipkaBar.cdr" />
-    <None Include="priprema\bin\Debug\NScriptw.exe.config" />
-    <None Include="priprema\bin\Debug\NScriptw.vshost.exe.config" />
-    <None Include="priprema\bin\Debug\NScriptw.vshost.exe.manifest" />
-    <None Include="priprema\C# Runtime Compilation.mht" />
-    <None Include="priprema\disketa.pspimage" />
-    <None Include="priprema\icon\kCalc.pspimage" />
-    <None Include="priprema\kCalc GUI.cdr" />
-    <None Include="priprema\LCD2N___.TTF" />
-    <None Include="priprema\lcdwintt.zip" />
-    <None Include="priprema\LCDWinTT\LCD2N___.TTF" />
-    <None Include="priprema\NScript - A script host for C#_VB.NET_JScript.NET - CodeProject.mht" />
-    <None Include="priprema\nscript.lib\NScript.nrf" />
-    <None Include="priprema\nscript.lib\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="priprema\nscript.lib\obj\Debug\NScriptLib.csproj.GenerateResource.Cache" />
-    <None Include="priprema\nscript.lib\obj\Debug\NScriptLib.csprojResolveAssemblyReference.cache" />
-    <None Include="priprema\nscriptw\app.config" />
-    <None Include="priprema\nscriptw\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="priprema\nscriptw\obj\Debug\NScriptW.csprojResolveAssemblyReference.cache" />
-    <None Include="priprema\nscript\app.config" />
-    <None Include="priprema\nscript\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="priprema\nscript\obj\Debug\NScript.csprojResolveAssemblyReference.cache" />
-    <None Include="priprema\nscript_src.zip" />
-    <None Include="priprema\open.pspimage" />
-    <None Include="priprema\POCKC___.TTF" />
-    <None Include="priprema\ReservedWord_JavaScript.txt.bak" />
-    <None Include="priprema\ScriptEngine - User Defined Calculations in C#, VB, JScript and F# - CodeProject.mht" />
-    <None Include="priprema\ScriptEngine.zip" />
-    <None Include="priprema\ScriptEngineTutorial.zip" />
-    <None Include="priprema\ScriptEngine_2.zip" />
-    <None Include="priprema\setup\setup.vdproj" />
-    <None Include="priprema\system.codedom.compiler.codedomprovider%28v=VS.100%29_aspx.mht" />
-    <None Include="priprema\tipka.cdr" />
-    <None Include="priprema\tipka.psd" />
-    <None Include="priprema\tipkaBar.cdr" />
-    <None Include="priprema\tipkaBar.psd" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
@@ -377,11 +264,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="priprema\nscript.lib\obj\Debug\TempPE\" />
-    <Folder Include="priprema\nscriptw\obj\Debug\TempPE\" />
-    <Folder Include="priprema\nscript\obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
