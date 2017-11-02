@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Forms;
 
 class Script
 {
@@ -7,9 +8,10 @@ class Script
     static void Main(string[] args)
     {
         //Console.BackgroundColor = #010101;
-        Int32 a, b;
+        Double a, b;
         a = 1123;
-        b = 213;
+        b = 213.22;
         Console.WriteLine("Hello, my Angel" + a * b);
+        MessageBox.Show("AAA");
     }
 }
