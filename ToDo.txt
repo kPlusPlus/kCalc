@@ -1,4 +1,6 @@
-﻿napravio sam promjenu
+﻿
+
+--- farbanje varijabli zelenom bojom recimo var NESTO = 1;
 +++ dogradio sam jscript sa 7 na 10
 +++ GIT repository
 --- uključi ScriptEngine
