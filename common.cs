@@ -178,22 +178,30 @@ namespace kCalc
         //TODO testiraj parsiralicu
         public void Parsiralica(string sNumber)
         {
+            // Int
             if (Int32.TryParse(sNumber, out ValueInt) == true)
             {
-                ValueType = 1;
+                ValueType = (int) EValueType.Int;
                 return;
             }
+
+            // Double
             string varval = sNumber.Replace(".", ",");
             if (double.TryParse(varval, out ValueDouble) == true)
             {
-                ValueType = 2;
+                ValueType = (int) EValueType.Dobule;
                 return;
             }
-            
-
         }
-
     }
+    public enum EValueType
+    {
+            Nothing,
+            Int, 
+            Dobule 
+    }
+
+    
 
     public class FunctionS
     {
