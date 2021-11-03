@@ -112,7 +112,7 @@ namespace kCalc
             dsv.WriteXml( fileVariables );
             frm.dsVariables1BindingSource.DataSource = dsv;
 
-            frm.Show();            
+            frm.Show();        
         }
 
 
