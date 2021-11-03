@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 class Script
 {
-    String strName = "Pero";
+    String strName = "Michael";
 
     static void Main(string[] args)
     {
