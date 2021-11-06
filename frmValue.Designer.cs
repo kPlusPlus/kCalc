@@ -112,6 +112,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmValue";
             this.Text = "Values list";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmValue_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).EndInit();

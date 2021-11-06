@@ -18,5 +18,11 @@ namespace kCalc
         {
             InitializeComponent();
         }
+
+        private void frmValue_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // save dataset
+            dsVariables1.WriteXml(com.fileVariables);
+        }
     }
 }

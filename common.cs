@@ -34,7 +34,7 @@ namespace kCalc
         private VariableS _Var;
         public FunctionS[] Functions;
         private FunctionS _Fun;
-        private string fileVariables = "Variables.xml";
+        public string fileVariables = "Variables.xml";
 
         [System.Runtime.InteropServices.DllImport("user32.DLL")]
         private extern static int SendMessage(
@@ -96,7 +96,7 @@ namespace kCalc
                 dsv.ReadXml(fileVariables);
             DataRow dr;
 
-            for(int i = 0; i < Variables.Length; i++)
+            for (int i = 0; i < Variables.Length; i++)
             {
                 dr = dsv.Tables["Variables"].NewRow();
                 
@@ -110,7 +110,9 @@ namespace kCalc
             DataTable dt = RemoveDuplicateRows(dsv.Tables["Variables"], "Name");
 
             dsv.WriteXml( fileVariables );
-            frm.dsVariables1BindingSource.DataSource = dsv;
+            frm.dsVariables1 = dsv;
+            frm.dsVariables1BindingSource.DataSource = frm.dsVariables1;
+            //frm.dsVariables1BindingSource.DataSource = dsv;
 
             frm.Show();        
         }
@@ -139,10 +141,14 @@ namespace kCalc
         public DataTable RemoveDuplicateRows(DataTable dTable, string colName)
         {
             Hashtable hTable = new Hashtable();
-            ArrayList duplicateList = new ArrayList();
+            ArrayList duplicateList = new ArrayList();            
 
             //Add list of all the unique item value to hashtable, which stores combination of key, value pair.
             //And add duplicate item value in arraylist.
+            
+            //dTable.DefaultView.Sort = "ID DESC";
+            //ddataTable = dTable.DefaultView.ToTable();
+            
             foreach (DataRow drow in dTable.Rows)
             {
                 if (hTable.Contains(drow[colName]))
@@ -156,7 +162,9 @@ namespace kCalc
                 dTable.Rows.Remove(dRow);
 
             //Datatable which contains unique records will be return as output.
-            return dTable;
+            //return dTable;
+            return dTable;;
+
         }
 
     }

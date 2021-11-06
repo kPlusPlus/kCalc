@@ -77,3 +77,6 @@ i vraćanje varijabli na formu
 
 
 --- frmVariables include dataset inside and manipulate changes
+		+++ save changes in dataset on close form
+		--- remove duplex but remove OLD variables
+--- TODO all VSA change to ICodeCompiler
