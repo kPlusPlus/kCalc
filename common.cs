@@ -149,8 +149,20 @@ namespace kCalc
             //dTable.DefaultView.Sort = "ID DESC";
             //ddataTable = dTable.DefaultView.ToTable();
             
+            /*
             foreach (DataRow drow in dTable.Rows)
             {
+                if (hTable.Contains(drow[colName]))
+                    duplicateList.Add(drow);
+                else
+                    hTable.Add(drow[colName], string.Empty);
+            }
+            */
+
+            DataRow drow;
+            for(int i= dTable.Rows.Count-1; i>-1; i--)
+            {
+                drow = dTable.Rows[i];
                 if (hTable.Contains(drow[colName]))
                     duplicateList.Add(drow);
                 else
