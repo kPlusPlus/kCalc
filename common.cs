@@ -141,23 +141,7 @@ namespace kCalc
         public DataTable RemoveDuplicateRows(DataTable dTable, string colName)
         {
             Hashtable hTable = new Hashtable();
-            ArrayList duplicateList = new ArrayList();            
-
-            //Add list of all the unique item value to hashtable, which stores combination of key, value pair.
-            //And add duplicate item value in arraylist.
-            
-            //dTable.DefaultView.Sort = "ID DESC";
-            //ddataTable = dTable.DefaultView.ToTable();
-            
-            /*
-            foreach (DataRow drow in dTable.Rows)
-            {
-                if (hTable.Contains(drow[colName]))
-                    duplicateList.Add(drow);
-                else
-                    hTable.Add(drow[colName], string.Empty);
-            }
-            */
+            ArrayList duplicateList = new ArrayList();
 
             DataRow drow;
             for(int i= dTable.Rows.Count-1; i>-1; i--)
@@ -175,7 +159,7 @@ namespace kCalc
 
             //Datatable which contains unique records will be return as output.
             //return dTable;
-            return dTable;;
+            return dTable;
 
         }
 

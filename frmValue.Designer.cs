@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsVariables1 = new kCalc.dsVariables();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valDoubleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valueTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valIntDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dsVariables1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsVariables1 = new kCalc.dsVariables();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsVariables1)).BeginInit();
@@ -61,18 +61,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1104, 508);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dsVariables1BindingSource
-            // 
-            this.dsVariables1BindingSource.AllowNew = true;
-            this.dsVariables1BindingSource.DataMember = "Variables";
-            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
-            // 
-            // dsVariables1
-            // 
-            this.dsVariables1.DataSetName = "dsVariables";
-            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataGridView1.TabIndex = 0;            
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -103,6 +92,17 @@
             this.valIntDataGridViewTextBoxColumn.DataPropertyName = "ValInt";
             this.valIntDataGridViewTextBoxColumn.HeaderText = "ValInt";
             this.valIntDataGridViewTextBoxColumn.Name = "valIntDataGridViewTextBoxColumn";
+            // 
+            // dsVariables1BindingSource
+            // 
+            this.dsVariables1BindingSource.AllowNew = true;
+            this.dsVariables1BindingSource.DataMember = "Variables";
+            this.dsVariables1BindingSource.DataSource = this.dsVariables1;
+            // 
+            // dsVariables1
+            // 
+            this.dsVariables1.DataSetName = "dsVariables";
+            this.dsVariables1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmValue
             // 

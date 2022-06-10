@@ -24,5 +24,7 @@ namespace kCalc
             // save dataset
             dsVariables1.WriteXml(com.fileVariables);
         }
+
+
     }
 }

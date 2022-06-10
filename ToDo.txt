@@ -9,6 +9,7 @@
 --- list of variable
       intellisense variable use
       all variable must be in green color
+	--- brisanje varijable i snimanje
 --- list of custom functions
 
 
