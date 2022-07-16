@@ -6,10 +6,11 @@
 --- uključi ScriptEngine TO DO OR MUCH WORSE JOB
 --- VBScript compile
 --- work directory view all files
---- list of variable
+--++ list of variable
       intellisense variable use
       all variable must be in green color
-	--- brisanje varijable i snimanje
+	+++ brisanje varijable i snimanje
+		snimi se kod izlaza iz te forme
 --- list of custom functions
 
 
