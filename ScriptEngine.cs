@@ -126,7 +126,7 @@ namespace kCalc
                     source = "package UserScript\r\n{\r\n" + 
                         "class RunScript" + count.ToString() + "\r\n{\r\n" + 
                         variables + "\r\npublic function Eval() : String\r\n{\r\nvar Result;\r\n" +
-                        code + "\r\nreturn Result; \r\n}\r\n}\r\n}\r\n";
+                        code + "\r\nreturn Result; \r\n}\r\n}\r\n}\r\n";                    
                     compiler = new JScriptCodeProvider();
                     break;
                 case Languages.FSharp:

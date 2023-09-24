@@ -67,12 +67,23 @@ DEBUG
 
 	--- TESTIRAJ comment line
 
---- napravi da radi pod više programskih jezika
+--- 24/09/2023	napravi da radi pod više programskih jezika
+	TESTIRAM
+		JScript +
+		VB		+
+		C#		+
+		F#		--- dogradi
+
+
+*FEAUTURE	dogradi bolje boje od ovih može kroz THEME
+*FEAUTURE	dogradi kada promijeniš jezik programiranja promijeni i syntax language !!!
+*Bug 5* kada napravi resultat piše u history na dnu, skrolaj dolje
+*FEAUTURE	dogradi - da možeš pomicati graničare history polja i dolje code polja
 
 
 
 ------ riješi variable editor i ostalih tipova varijabli
-i vraćanje varijabli na formu
+		i vraćanje varijabli na formu
 ------ scriptengine da proradi i za ostale compilere
 
 

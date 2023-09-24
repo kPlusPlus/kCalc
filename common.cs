@@ -16,6 +16,8 @@ using System.Xml;
 using System.Text;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
+using static kCalc.ScriptEngine;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
 
 namespace kCalc
 {
@@ -66,6 +68,33 @@ namespace kCalc
             {
                 return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
             }
+        }
+
+        public string BackResultByLanguage(string formula, Languages lang)
+        {
+            //ScriptEngine engine = new ScriptEngine(ScriptEngine.Languages.JScript);
+            ScriptEngine engine = new ScriptEngine();
+            if (lang == Languages.VBasic)
+                engine = new ScriptEngine(ScriptEngine.Languages.VBasic);
+            else if (lang == Languages.JScript)
+                engine = new ScriptEngine(ScriptEngine.Languages.JScript);
+            else if (lang == Languages.CSharp)
+                engine = new ScriptEngine(ScriptEngine.Languages.CSharp);
+
+            try
+            {
+                engine.Code = formula;
+                if (engine.Compile())
+                    return engine.Evaluate().ToString();
+                else
+                    return engine.Messages.ToString();
+            }
+            catch(Exception ex)
+            {
+                return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
+            }
+
+            return "";
         }
 
         public void SetVariable(string sCont)
