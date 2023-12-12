@@ -80,6 +80,8 @@ namespace kCalc
                 engine = new ScriptEngine(ScriptEngine.Languages.JScript);
             else if (lang == Languages.CSharp)
                 engine = new ScriptEngine(ScriptEngine.Languages.CSharp);
+            else if (lang == Languages.FSharp)
+                engine = new ScriptEngine(ScriptEngine.Languages.FSharp);
 
             try
             {
@@ -227,13 +229,14 @@ namespace kCalc
             }
         }
     }
+
+
     public enum EValueType
     {
             Nothing,
             Int, 
             Dobule 
     }
-
     
 
     public class FunctionS

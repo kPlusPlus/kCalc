@@ -112,6 +112,9 @@
     <Reference Include="FSharp.Compiler.CodeDom, Version=1.0.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\FSharp.Compiler.CodeDom.1.0.0.1\lib\net40\FSharp.Compiler.CodeDom.dll</HintPath>
     </Reference>
+    <Reference Include="FSharp.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\FSharp.Core.7.0.400\lib\netstandard2.0\FSharp.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Jint, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e92ba9c8d81157f, processorArchitecture=MSIL">
       <HintPath>packages\Jint.2.11.58\lib\net451\Jint.dll</HintPath>
     </Reference>
@@ -148,6 +151,7 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework.Luna" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -350,6 +354,7 @@
     <Content Include="icon\App.ico" />
     <Content Include="icon\Open.ico" />
     <Content Include="icon\save.ico" />
+    <None Include="ClassDiagram_kCalc.cd" />
     <None Include="Documents\test6.KRcal" />
     <None Include="Documents\test7.kcal" />
     <None Include="Documents\test8.kcal" />

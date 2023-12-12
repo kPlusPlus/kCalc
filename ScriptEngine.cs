@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.CSharp;
 using Microsoft.JScript;
 using Microsoft.VisualBasic;
+using Microsoft.FSharp;
 using System.Reflection;
 using System.CodeDom.Compiler;
 //using Microsoft.FSharp.Compiler.CodeDom;
