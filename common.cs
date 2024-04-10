@@ -1,28 +1,19 @@
-using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Data;
 using Microsoft.JScript;
 using Microsoft.JScript.Vsa;
-using Microsoft.CSharp;
-using Microsoft.VisualBasic;
-using System.CodeDom;
+using System;
 using System.CodeDom.Compiler;
-using System.Diagnostics;
-using System.Reflection;
-using System.Xml;
-using System.Text;
+using System.Collections;
 using System.Collections.Specialized;
+using System.Data;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using static kCalc.ScriptEngine;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
 
 namespace kCalc
 {
     /// <summary>
-    /// kCalc --- mmodul for run JavaScript
+    /// kCalc       --- mmodul for run JavaScript
+    ///             --- C# scripts
     /// </summary>
     public class common
     {
@@ -91,7 +82,7 @@ namespace kCalc
                 else
                     return engine.Messages.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return "ERROR " + ex.Message.ToString() + Environment.NewLine + " >>> " + ex.Source + " " + ex.StackTrace;
             }
@@ -103,13 +94,13 @@ namespace kCalc
         {
             StringCollection resultList = new StringCollection();
 
-            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})\s{0,3};", RegexOptions.Multiline | RegexOptions.ExplicitCapture);            
+            Regex regexObj = new Regex(@"var (?<varname>([a-zA-Z0-9_-]{1,}))\s{0,3}=(?<varval>\s{0,3}\d{0,12}.\d{0,12})\s{0,3};", RegexOptions.Multiline | RegexOptions.ExplicitCapture);
             MatchCollection mc = regexObj.Matches(sCont);
 
             if (Variables != null) Variables = null;
 
-            foreach(Match m in mc)
-            {                
+            foreach (Match m in mc)
+            {
                 if (Variables == null)
                     Variables = new VariableS[] { };
                 int count = Variables.Length;
@@ -130,7 +121,7 @@ namespace kCalc
             for (int i = 0; i < Variables.Length; i++)
             {
                 dr = dsv.Tables["Variables"].NewRow();
-                
+
                 dr["Name"] = Variables[i].Name;
                 dr["ValInt"] = Variables[i].ValueInt;
                 dr["ValDouble"] = Variables[i].ValueDouble;
@@ -140,12 +131,12 @@ namespace kCalc
 
             DataTable dt = RemoveDuplicateRows(dsv.Tables["Variables"], "Name");
 
-            dsv.WriteXml( fileVariables );
+            dsv.WriteXml(fileVariables);
             frm.dsVariables1 = dsv;
             frm.dsVariables1BindingSource.DataSource = frm.dsVariables1;
             //frm.dsVariables1BindingSource.DataSource = dsv;
 
-            frm.Show();        
+            frm.Show();
         }
 
 
@@ -175,7 +166,7 @@ namespace kCalc
             ArrayList duplicateList = new ArrayList();
 
             DataRow drow;
-            for(int i= dTable.Rows.Count-1; i>-1; i--)
+            for (int i = dTable.Rows.Count - 1; i > -1; i--)
             {
                 drow = dTable.Rows[i];
                 if (hTable.Contains(drow[colName]))
@@ -216,7 +207,7 @@ namespace kCalc
             // Int
             if (Int32.TryParse(sNumber, out ValueInt) == true)
             {
-                ValueType = (int) EValueType.Int;
+                ValueType = (int)EValueType.Int;
                 return;
             }
 
@@ -224,7 +215,7 @@ namespace kCalc
             string varval = sNumber.Replace(".", ",");
             if (double.TryParse(varval, out ValueDouble) == true)
             {
-                ValueType = (int) EValueType.Dobule;
+                ValueType = (int)EValueType.Dobule;
                 return;
             }
         }
@@ -233,11 +224,11 @@ namespace kCalc
 
     public enum EValueType
     {
-            Nothing,
-            Int, 
-            Dobule 
+        Nothing,
+        Int,
+        Dobule
     }
-    
+
 
     public class FunctionS
     {
