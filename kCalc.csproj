@@ -107,31 +107,33 @@
       <HintPath>packages\FSharp.Compiler.CodeDom.1.0.0.1\lib\net40\FSharp.Compiler.CodeDom.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\FSharp.Core.8.0.200\lib\netstandard2.0\FSharp.Core.dll</HintPath>
+      <HintPath>packages\FSharp.Core.8.0.301\lib\netstandard2.0\FSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Jint, Version=3.1.1.0, Culture=neutral, PublicKeyToken=2e92ba9c8d81157f, processorArchitecture=MSIL">
-      <HintPath>packages\Jint.3.1.1\lib\net462\Jint.dll</HintPath>
+    <Reference Include="Jint, Version=3.1.4.0, Culture=neutral, PublicKeyToken=2e92ba9c8d81157f, processorArchitecture=MSIL">
+      <HintPath>packages\Jint.3.1.4\lib\net462\Jint.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis, Version=4.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.9.2\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis, Version=4.10.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.10.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.9.2\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.10.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.10.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting, Version=4.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.Scripting.4.9.2\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting, Version=4.10.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.Scripting.4.10.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.Scripting, Version=4.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.Scripting.Common.4.9.2\lib\netstandard2.0\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.Scripting, Version=4.10.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Scripting.Common.4.10.0\lib\netstandard2.0\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.DependencyModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Extensions.DependencyModel.8.0.0\lib\net462\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyModel.8.0.1\lib\net462\Microsoft.Extensions.DependencyModel.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.JScript">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic">
       <Name>Microsoft.VisualBasic</Name>
     </Reference>
@@ -242,8 +244,8 @@
     <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Json, Version=8.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Json.8.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
@@ -303,139 +305,6 @@
     <Compile Include="frmValue.Designer.cs">
       <DependentUpon>frmValue.cs</DependentUpon>
     </Compile>
-    <Compile Include="priprema\cs-script\hello.cs" />
-    <Compile Include="priprema\cs-script\inc\isadmin.cs" />
-    <Compile Include="priprema\cs-script\inc\pkill.cs" />
-    <Compile Include="priprema\cs-script\inc\ServiceStack.cs" />
-    <Compile Include="priprema\cs-script\inc\WebApi.cs" />
-    <Compile Include="priprema\cs-script\inc\which.cs" />
-    <Compile Include="priprema\cs-script\inc\who.cs" />
-    <Compile Include="priprema\cs-script\lib\clearTemp.cs" />
-    <Compile Include="priprema\cs-script\lib\config.cs" />
-    <Compile Include="priprema\cs-script\lib\debugVS10.0.cs" />
-    <Compile Include="priprema\cs-script\lib\debugVS11.0.cs" />
-    <Compile Include="priprema\cs-script\lib\debugVS12.0.cs" />
-    <Compile Include="priprema\cs-script\lib\debugVS14.0.cs" />
-    <Compile Include="priprema\cs-script\lib\help.cs" />
-    <Compile Include="priprema\cs-script\lib\lscache.cs" />
-    <Compile Include="priprema\cs-script\lib\lsnuget.cs" />
-    <Compile Include="priprema\cs-script\lib\nuget_update.cs" />
-    <Compile Include="priprema\cs-script\lib\verify.cs" />
-    <Compile Include="priprema\cs-script\samples\Automation\App.cs" />
-    <Compile Include="priprema\cs-script\samples\Automation\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Classless\Hostied script\ExecuteClasslessWithDefaultCompiler.cs" />
-    <Compile Include="priprema\cs-script\samples\Classless\Standalone script\HelloWorld.cs" />
-    <Compile Include="priprema\cs-script\samples\Code.cs" />
-    <Compile Include="priprema\cs-script\samples\code.Net_v4.5.cs" />
-    <Compile Include="priprema\cs-script\samples\cutfile.cs" />
-    <Compile Include="priprema\cs-script\samples\ErrorLevelTester.cs" />
-    <Compile Include="priprema\cs-script\samples\getUrl.cs" />
-    <Compile Include="priprema\cs-script\samples\hello.cs" />
-    <Compile Include="priprema\cs-script\samples\hello_auto.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Hello.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\HostingScenarios.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\AppDomainExtensions.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Classless.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\CompileErrors.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\ConditionalCompilation.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\CustomProbing.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Debugging.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\DetectingScriptCodeCalls\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\DetectingScriptCodeCalls\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Eval.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Hello.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostVBScript.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\ExtendingLife.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\HelloScript.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\InterfaceAlignmentWithoutScripting.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\LifetimeManagement.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\MethodSignatures.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Modifying script without restart\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Modifying script without restart\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\HostVBScript.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\NonC#CompilerInHostApp.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Performance.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\ExternalAsm.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\RuntimeErrors.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\TypeSafety.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\Hello.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\HostingScenarios.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\MemoryManagement.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Scripting.evaluator.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Scripting.Extensions.cs" />
-    <Compile Include="priprema\cs-script\samples\Hosting\Scripting.native.cs" />
-    <Compile Include="priprema\cs-script\samples\importTickScript.cs" />
-    <Compile Include="priprema\cs-script\samples\Macros\precompile.cs" />
-    <Compile Include="priprema\cs-script\samples\Macros\script.cs" />
-    <Compile Include="priprema\cs-script\samples\Macros\script_simple.cs" />
-    <Compile Include="priprema\cs-script\samples\nkill.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\classless.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\CPPHashDef.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\freestyle_dsl.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\auto_class.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\auto_method.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\dsl.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\hashdef.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\freestyle.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\nuget_update.cs" />
-    <Compile Include="priprema\cs-script\samples\Precompilers\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\printScreen.cs" />
-    <Compile Include="priprema\cs-script\samples\Progressbar.cs" />
-    <Compile Include="priprema\cs-script\samples\ReflectScript.cs" />
-    <Compile Include="priprema\cs-script\samples\Resources\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\REST\WebAPI_Server.cs" />
-    <Compile Include="priprema\cs-script\samples\runScript.cs" />
-    <Compile Include="priprema\cs-script\samples\RuntimeInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\Danger.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\Danger1.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\HostSimlified.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\AssemblyInfo.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\ExpressionSerializer.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\Host.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\UntrustedCode.cs" />
-    <Compile Include="priprema\cs-script\samples\Sandboxing\NET4.0\UntrustedCode.cs" />
-    <Compile Include="priprema\cs-script\samples\ScriptEE.cs" />
-    <Compile Include="priprema\cs-script\samples\ScriptEncryption\CRC32.cs" />
-    <Compile Include="priprema\cs-script\samples\ScriptEncryption\host.cs" />
-    <Compile Include="priprema\cs-script\samples\ScriptEncryption\Script.cs" />
-    <Compile Include="priprema\cs-script\samples\SurrogateHostScript.cs" />
-    <Compile Include="priprema\cs-script\samples\tick.cs" />
-    <Compile Include="priprema\cs-script\samples\unsafe_keyword.cs" />
-    <Compile Include="priprema\cs-script\samples\WinForm.cs" />
-    <Compile Include="priprema\nscript.lib\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscript.lib\BaseApp.cs" />
-    <Compile Include="priprema\nscript.lib\CompilerError.cs" />
-    <Compile Include="priprema\nscript.lib\IScriptManager.cs" />
-    <Compile Include="priprema\nscript.lib\IScriptManagerCallback.cs" />
-    <Compile Include="priprema\nscript.lib\ScriptManager.cs" />
-    <Compile Include="priprema\nscript.lib\UnsupportedLanguageExecption.cs" />
-    <Compile Include="priprema\nscriptw\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscriptw\WindowsApp.cs" />
-    <Compile Include="priprema\nscript\AssemblyInfo.cs" />
-    <Compile Include="priprema\nscript\ConsoleApp.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -463,7 +332,6 @@
     <EmbeddedResource Include="frmValue.resx">
       <DependentUpon>frmValue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="priprema\nscript.lib\NScript.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -478,48 +346,6 @@
     <Content Include="priprema\background.jpg" />
     <Content Include="priprema\CALC8305.jpg" />
     <Content Include="priprema\Corel Auto-Preserve\nove boje.png" />
-    <Content Include="priprema\cs-script\cscs.exe" />
-    <Content Include="priprema\cs-script\css.exe" />
-    <Content Include="priprema\cs-script\css_config.exe" />
-    <Content Include="priprema\cs-script\csws.exe" />
-    <Content Include="priprema\cs-script\inc\README.txt" />
-    <Content Include="priprema\cs-script\lib\ConfigConsole\ConfigConsole.exe" />
-    <Content Include="priprema\cs-script\lib\CSSCodeProvider.v4.6.dll" />
-    <Content Include="priprema\cs-script\lib\CSScriptLibrary.dll" />
-    <Content Include="priprema\cs-script\lib\CSScriptLibrary.xml" />
-    <Content Include="priprema\cs-script\lib\Mono.CSharp.dll" />
-    <Content Include="priprema\cs-script\lib\nuget.exe" />
-    <Content Include="priprema\cs-script\lib\ShellExtensions\CS-Script.exe" />
-    <Content Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\ShellExt.cs.{25D84CB0-7345-11D3-A4A1-0080C8ECFED4}.dll" />
-    <Content Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\ShellExt64.cs.{25D84CB0-7345-11D3-A4A1-0080C8ECFED4}.dll" />
-    <Content Include="priprema\cs-script\readme.txt" />
-    <Content Include="priprema\cs-script\ReleaseNotes.txt" />
-    <Content Include="priprema\cs-script\samples\Automation\App.exe" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\CSScriptLibrary.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\host.exe" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\readme.txt" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\readme.txt" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\CSSCodeProvider.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\CSScriptLibrary.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\Hello.js" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\CSScriptLibrary.v3.5.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\readme.txt" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Host.sln" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Readme.txt" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Host.sln" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Lib\CSScriptLibrary.v3.5.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Lib\CSScriptLibrary.v3.5.xml" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Host.sln" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Lib\CSScriptLibrary.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Lib\CSScriptLibrary.xml" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Host.sln" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Lib\CSScriptLibrary.dll" />
-    <Content Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Lib\CSScriptLibrary.xml" />
-    <Content Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\hashdef.dll" />
-    <Content Include="priprema\cs-script\samples\README.txt" />
-    <Content Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\Host.sln" />
-    <Content Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\Readme.txt" />
-    <Content Include="priprema\cs-script\samples\Sandboxing\somefile.txt" />
     <Content Include="priprema\expences-button-png-hi.png" />
     <Content Include="priprema\icon\ni0043-48.gif" />
     <Content Include="priprema\icon\ni0044-48.gif" />
@@ -534,8 +360,6 @@
     <Content Include="priprema\kalkulator_place.png" />
     <Content Include="priprema\nove boje.png" />
     <Content Include="priprema\nscript.sln" />
-    <Content Include="priprema\nscriptw\App.ico" />
-    <Content Include="priprema\nscript\App.ico" />
     <Content Include="priprema\open.gif" />
     <Content Include="priprema\open.ico" />
     <Content Include="priprema\open.jpg" />
@@ -583,75 +407,6 @@
     <None Include="priprema\background2.pspimage" />
     <None Include="priprema\Backup_of_tipka.cdr" />
     <None Include="priprema\C# Runtime Compilation.mht" />
-    <None Include="priprema\cs-script\docs\C# Script %28missing puzzle piece%29.url" />
-    <None Include="priprema\cs-script\docs\CS-Script Source - Home.url" />
-    <None Include="priprema\cs-script\docs\Help\CSScript.chm" />
-    <None Include="priprema\cs-script\docs\Help\CSScriptLibrary.chm" />
-    <None Include="priprema\cs-script\install.cmd" />
-    <None Include="priprema\cs-script\install_silent.cmd" />
-    <None Include="priprema\cs-script\lib\debug2013.csl" />
-    <None Include="priprema\cs-script\lib\debug2015.csl" />
-    <None Include="priprema\cs-script\lib\new_script.template" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\00.Open with VS2015.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\01.Open with VS2013.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\02.Open with VS2012.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\03.Open with VS2010.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\04.Open with VS2008.cmd.disabled" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\05.Open with VS2005.cmd.disabled" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\05.separator" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\06.Run.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\08.Run %28console%29.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\10.Debug Script.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\12.separator" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\14.Verify.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\16.separator" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\18.Configuration....cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\20.separator" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\22.Advanced\00.Open cache directory.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\22.Advanced\02.New WinForm script.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\00.VS2003 project.c.cmd.disabled" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\02.VS2005 project.c.cmd.disabled" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\04.VS2008 project.c.cmd.disabled" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\05.VS2010 project.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\06.VS2012 project.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\07.VS2013 project.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\08.VS2015 project.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\09.Executable Shortcut.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\24.Convert to\10.Executable Shortcut %28console%29.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\00.EXE.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\02.EXE %28console%29.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\04.DLL.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\06.separator" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\08.EXE %28debug%29.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\26.Compile to\10.DLL %28debug%29.c.cmd" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\install.bat" />
-    <None Include="priprema\cs-script\lib\ShellExtensions\Template\CS-Script\uninstall.bat" />
-    <None Include="priprema\cs-script\samples\Automation\run.cmd" />
-    <None Include="priprema\cs-script\samples\Classless\Standalone script\Autoclass.cmd" />
-    <None Include="priprema\cs-script\samples\ErrorLevelTester.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\runAsApp.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\runAsScript.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\runAsApp.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\runAsScript.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Modifying script without restart\run.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\run.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\runAsApp.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\runAsScript.cmd" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\app.config" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\app.config" />
-    <None Include="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Precompilers\AdvancedSamples\Run.cmd" />
-    <None Include="priprema\cs-script\samples\Precompilers\run.cmd" />
-    <None Include="priprema\cs-script\samples\Resources\run.cmd" />
-    <None Include="priprema\cs-script\samples\Sandboxing\NET4.0\Host\Host.csproj" />
-    <None Include="priprema\cs-script\samples\Sandboxing\runit.cmd" />
-    <None Include="priprema\cs-script\samples\Sandboxing\Sandboxing.7z" />
-    <None Include="priprema\cs-script\samples\ScriptEncryption\Run.cmd" />
-    <None Include="priprema\cs-script\uninstall.cmd" />
     <None Include="priprema\disketa.pspimage" />
     <None Include="priprema\icon\kCalc.pspimage" />
     <None Include="priprema\kCalc GUI.cdr" />
@@ -659,12 +414,6 @@
     <None Include="priprema\lcdwintt.zip" />
     <None Include="priprema\LCDWinTT\LCD2N___.TTF" />
     <None Include="priprema\NScript - A script host for C#_VB.NET_JScript.NET - CodeProject.mht" />
-    <None Include="priprema\nscript.lib\NScript.nrf" />
-    <None Include="priprema\nscript.lib\NScriptLib.csproj" />
-    <None Include="priprema\nscriptw\app.config" />
-    <None Include="priprema\nscriptw\NScriptW.csproj" />
-    <None Include="priprema\nscript\app.config" />
-    <None Include="priprema\nscript\NScript.csproj" />
     <None Include="priprema\nscript_src.zip" />
     <None Include="priprema\open.pspimage" />
     <None Include="priprema\POCKC___.TTF" />
