@@ -344,7 +344,8 @@
     <Content Include="priprema\about.gif" />
     <Content Include="priprema\about.jpg" />
     <Content Include="priprema\background.jpg" />
-    <Content Include="priprema\CALC8305.jpg" />
+    <None Include="priprema\calc2_back.png" />
+    <None Include="priprema\calc2_tipka.png" />
     <Content Include="priprema\Corel Auto-Preserve\nove boje.png" />
     <Content Include="priprema\expences-button-png-hi.png" />
     <Content Include="priprema\icon\ni0043-48.gif" />

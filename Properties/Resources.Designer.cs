@@ -63,6 +63,26 @@ namespace kCalc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calc2_back {
+            get {
+                object obj = ResourceManager.GetObject("calc2_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calc2_tipka {
+            get {
+                object obj = ResourceManager.GetObject("calc2_tipka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tipka {
             get {
                 object obj = ResourceManager.GetObject("tipka", resourceCulture);

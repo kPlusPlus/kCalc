@@ -12,7 +12,7 @@
       <Value Profile="(Default)">64, 0, 0</Value>
     </Setting>
     <Setting Name="FormBackColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">64, 0, 0</Value>
+      <Value Profile="(Default)">Desktop</Value>
     </Setting>
     <Setting Name="myFontScriptBox" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Tahoma, 9pt</Value>
@@ -49,6 +49,9 @@
     </Setting>
     <Setting Name="myFontDisplay" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Microsoft Sans Serif, 18pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="myScriptBoxBackgroundColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">31, 31, 31</Value>
     </Setting>
   </Settings>
 </SettingsFile>

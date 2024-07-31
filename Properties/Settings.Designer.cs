@@ -12,7 +12,7 @@ namespace kCalc.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -61,7 +61,7 @@ namespace kCalc.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("64, 0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Desktop")]
         public global::System.Drawing.Color FormBackColor {
             get {
                 return ((global::System.Drawing.Color)(this["FormBackColor"]));
@@ -212,6 +212,18 @@ namespace kCalc.Properties {
             }
             set {
                 this["myFontDisplay"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("31, 31, 31")]
+        public global::System.Drawing.Color myScriptBoxBackgroundColor {
+            get {
+                return ((global::System.Drawing.Color)(this["myScriptBoxBackgroundColor"]));
+            }
+            set {
+                this["myScriptBoxBackgroundColor"] = value;
             }
         }
     }
