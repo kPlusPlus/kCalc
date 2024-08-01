@@ -118,7 +118,7 @@ namespace kCalc
                 dsv.ReadXml(fileVariables);
             DataRow dr;
 
-            if (Variables.Length == 0) return;
+            if (Variables == null) return;
             for (int i = 0; i < Variables.Length; i++)
             {
                 dr = dsv.Tables["Variables"].NewRow();
