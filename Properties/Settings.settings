@@ -51,7 +51,7 @@
       <Value Profile="(Default)">Microsoft Sans Serif, 18pt, style=Bold</Value>
     </Setting>
     <Setting Name="myScriptBoxBackgroundColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">31, 31, 31</Value>
+      <Value Profile="(Default)">47, 47, 47</Value>
     </Setting>
   </Settings>
 </SettingsFile>

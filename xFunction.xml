@@ -2,7 +2,7 @@
 <Function>
 	<!-- Method -->
 	<Func name="Absoulute" formula="Math.abs()" regex="Math\.abs" cursor="-1" desc="Returns the absolute value of a number."
-		cat="Trig" type="keyword" />
+		cat="Trig" type="keyword"/>
 	<Func name="Power" formula="Math.pow( , )" cursor="-3" desc="Returns the value of a base expression taken to a specified power."
 		cat="Trig" type="keyword" />
 	<Func name="Sin" formula="Math.sin()" cursor="-1" desc="Sin" cat="Trig" type="keyword" />

@@ -217,7 +217,7 @@ namespace kCalc.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("31, 31, 31")]
+        [global::System.Configuration.DefaultSettingValueAttribute("47, 47, 47")]
         public global::System.Drawing.Color myScriptBoxBackgroundColor {
             get {
                 return ((global::System.Drawing.Color)(this["myScriptBoxBackgroundColor"]));
