@@ -344,6 +344,9 @@
     <Content Include="priprema\about.gif" />
     <Content Include="priprema\about.jpg" />
     <Content Include="priprema\background.jpg" />
+    <None Include="About.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="priprema\calc2_back.png" />
     <None Include="priprema\calc2_tipka.png" />
     <Content Include="priprema\Corel Auto-Preserve\nove boje.png" />

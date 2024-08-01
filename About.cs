@@ -59,17 +59,17 @@ namespace kCalc
             // 
             this.rtbAbout.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rtbAbout.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.rtbAbout.Location = new System.Drawing.Point(12, 51);
+            this.rtbAbout.Location = new System.Drawing.Point(10, 44);
             this.rtbAbout.Name = "rtbAbout";
             this.rtbAbout.ReadOnly = true;
-            this.rtbAbout.Size = new System.Drawing.Size(362, 189);
+            this.rtbAbout.Size = new System.Drawing.Size(339, 192);
             this.rtbAbout.TabIndex = 0;
             this.rtbAbout.Text = "QQQQQQQQQQQQQQ";
             this.rtbAbout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseDown);
             // 
             // About
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(386, 272);
             this.Controls.Add(this.rtbAbout);
@@ -78,8 +78,8 @@ namespace kCalc
             this.Name = "About";
             this.Text = "About";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.DoubleClick += new System.EventHandler(this.About_DoubleClick);
             this.Load += new System.EventHandler(this.About_Load);
+            this.DoubleClick += new System.EventHandler(this.About_DoubleClick);
             this.ResumeLayout(false);
 
 		}
