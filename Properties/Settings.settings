@@ -53,5 +53,11 @@
     <Setting Name="myScriptBoxBackgroundColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">47, 47, 47</Value>
     </Setting>
+    <Setting Name="myFuncBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">20, 20, 20</Value>
+    </Setting>
+    <Setting Name="myFunctFontColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Yellow</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
