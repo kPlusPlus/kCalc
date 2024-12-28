@@ -73,7 +73,8 @@ namespace kCalc
                 engine = new ScriptEngine(ScriptEngine.Languages.CSharp);
             else if (lang == Languages.FSharp)
                 engine = new ScriptEngine(ScriptEngine.Languages.FSharp);
-
+            else if (lang == Languages.Python)
+                engine = new ScriptEngine(ScriptEngine.Languages.Python);
             try
             {
                 engine.Code = formula;

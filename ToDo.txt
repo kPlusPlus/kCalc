@@ -1,5 +1,6 @@
 ﻿--- 'VsaEngine' is obsolete
 --- UVEDI LANG Attribute u xFunction tako da svaki jezik ima svoje keywordse
+--- uvedi Python
 
 
 --- farbanje varijabli zelenom bojom recimo var NESTO = 1;

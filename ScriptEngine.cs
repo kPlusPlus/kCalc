@@ -16,7 +16,7 @@ namespace kCalc
 {
     public class ScriptEngine
     {
-        public enum Languages { VBasic, CSharp, JScript, FSharp };
+        public enum Languages { VBasic, CSharp, JScript, FSharp, Python };
         public Languages Language;
         private static int count = 0;
         private static AppDomain domain = null;
