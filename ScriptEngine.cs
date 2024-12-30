@@ -11,6 +11,8 @@ using System.Reflection;
 using System.CodeDom.Compiler;
 //using Microsoft.FSharp.Compiler.CodeDom;
 using FSharp.Compiler.CodeDom;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
 
 namespace kCalc
 {
