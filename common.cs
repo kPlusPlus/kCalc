@@ -8,6 +8,9 @@ using System.Data;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static kCalc.ScriptEngine;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+
 
 namespace kCalc
 {
@@ -74,7 +77,22 @@ namespace kCalc
             else if (lang == Languages.FSharp)
                 engine = new ScriptEngine(ScriptEngine.Languages.FSharp);
             else if (lang == Languages.Python)
-                engine = new ScriptEngine(ScriptEngine.Languages.Python);
+            {
+                // Create a Python engine
+                Microsoft.Scripting.Hosting.ScriptEngine pyengine = IronPython.Hosting.Python.CreateEngine();
+
+                // Create a scope for variables
+                ScriptScope scope = pyengine.CreateScope();
+
+                string pythonCode = formula;
+
+                // Execute the Python code
+                pyengine.Execute(pythonCode, scope);
+
+                dynamic result = scope.GetVariable("result");
+
+                return result.ToString();
+            }
             try
             {
                 engine.Code = formula;
