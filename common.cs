@@ -84,6 +84,12 @@ namespace kCalc
                 // Create a scope for variables
                 ScriptScope scope = pyengine.CreateScope();
 
+                // Path to lib
+                var pathsPython = pyengine.GetSearchPaths();
+                pathsPython.Add(@"c:\Python312\Lib"); // Add the path where your external module is located
+                pyengine.SetSearchPaths(pathsPython);
+
+
                 string pythonCode = formula;
 
                 // Execute the Python code

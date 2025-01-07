@@ -1,0 +1,40 @@
+import keyword
+print(keyword.kwlist)
+
+
+Keyword	Description
+False	Boolean value representing false.
+None	Represents a null value or no value at all.
+True	Boolean value representing true.
+and	Logical operator that returns True if both operands are true.
+as	Used to create an alias while importing a module.
+assert	Used for debugging purposes, raises an error if the condition is false.
+async	Indicates that a function is asynchronous.
+await	Used to call an asynchronous function and wait for its result.
+break	Exits the nearest enclosing loop.
+class	Used to define a new class.
+continue	Skips the current iteration of a loop and continues with the next iteration.
+def	Used to define a new function.
+del	Deletes a reference to an object.
+elif	Used in conditional statements as "else if."
+else	Specifies a block of code to be executed if the condition is false.
+except	Used to catch and handle exceptions.
+finally	A block that will execute after try and except blocks, regardless of whether an exception occurred or not.
+for	Used to create a for loop.
+from	Used to import specific parts of a module.
+global	Declares a variable as global, allowing it to be modified outside its scope.
+if	Starts a conditional statement.
+import	Imports a module into the current namespace.
+in	Tests for membership in sequences (like lists or strings).
+is	Tests for object identity, checking if two references point to the same object.
+lambda	Creates an anonymous function (a function without a name).
+nonlocal	Declares a variable in the nearest enclosing scope that is not global.
+not	Logical operator that negates the truth value of its operand.
+or	Logical operator that returns True if at least one operand is true.
+pass	A null statement; it does nothing when executed.
+raise	Raises an exception manually.
+return	Exits a function and optionally returns a value.
+try	Starts a block of code that will be tested for errors while it is being executed.
+while	Starts a while loop, which executes as long as its condition is true.
+with	Simplifies exception handling by encapsulating common preparation and cleanup tasks in so-called context managers.
+yield	Used in generators to return values one at a time, pausing the function's execution state between calls.

@@ -1,0 +1,5 @@
+import numpy
+times = 10
+etime = numpy.testing.measure('for i in range(10000): numpy.sqrt(i**2)', times=times)
+result = etime / times
+print(result)

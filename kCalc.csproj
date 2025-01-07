@@ -449,6 +449,9 @@
     <Content Include="priprema\save.jpg" />
     <Content Include="priprema\tipkaBar.jpg" />
     <Content Include="priprema\variables.png" />
+    <Content Include="xFunction_PYTHON.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="xFunction.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
