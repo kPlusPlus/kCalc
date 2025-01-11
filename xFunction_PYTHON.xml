@@ -2,5 +2,41 @@
 <Function>
 
   <Func name="boolean" formula="boolean" cursor="-1" desc=" At one stage it was planned that specific data types would be introduced into the Javascript language. boolean is one the data types that would have been able to be explicitly defined. To allow for this boolean was a reserved word. The plan to allow specific data types in Javascript no longer exists and boolean is therefore no longer on the reserved word list in the latest standards. Since many people still use earlier browsers where this was defined as a reserved word you should avoid using it." cat="JScript" type="keyword"></Func>
+  <Func name="False" formula="False" desc="Boolean value representing false." cat="python" type="keyword"></Func>
+  <Func name="None" formula="None" desc="Represents a null value or no value at all." cat="python" type="keyword"></Func>
+  <Func name="True" formula="True" desc="Boolean value representing true." cat="python" type="keyword"></Func>
+  <Func name="and" formula="and" desc="Logical operator that returns True if both operands are true." cat="python" type="keyword"></Func>
+  <Func name="as" formula="as" desc="Used to create an alias while importing a module." cat="python" type="keyword"></Func>
+  <Func name="assert" formula="assert" desc="Used for debugging purposes, raises an error if the condition is false." cat="python" type="keyword"></Func>
+  <Func name="async" formula="async" desc="Indicates that a function is asynchronous." cat="python" type="keyword"></Func>
+  <Func name="await" formula="await" desc="Used to call an asynchronous function and wait for its result." cat="python" type="keyword"></Func>
+  <Func name="break" formula="break" desc="Exits the nearest enclosing loop." cat="python" type="keyword"></Func>
+  <Func name="class" formula="class" desc="Used to define a new class." cat="python" type="keyword"></Func>
+  <Func name="continue" formula="continue" desc="Skips the current iteration of a loop and continues with the next iteration." type="keyword"></Func>
+  <Func name="def" formula="def" desc="Used to define a new function." type="keyword"></Func>
+  <Func name="del" formula="del" desc="Deletes a reference to an object." type="keyword"></Func>  
+  <Func name="elif" formula="elif" desc="Used in conditional statements as 'else if.'" type="keyword"></Func>
+  <Func name="else" formula="else" desc="Specifies a block of code to be executed if the condition is false." type="keyword"></Func>
+  <Func name="except" formula="except" desc="Used to catch and handle exceptions." type="keyword"></Func>
+  <Func name="finally" formula="finally" desc="A block that will execute after try and except blocks, regardless of whether an exception occurred or not." type="keyword"></Func>
+  <Func name="for" formula="for" desc="Used to create a for loop." type="keyword"></Func>
+  <Func name="from" formula="from" desc="Used to import specific parts of a module." type="keyword"></Func>
+  <Func name="global" formula="global" desc="Declares a variable as global, allowing it to be modified outside its scope." type="keyword"></Func>
+  <Func name="if" formula="if" desc="Starts a conditional statement." type="keyword"></Func>
+  <Func name="import" formula="import" desc="Imports a module into the current namespace." type="keyword"></Func>
+  <Func name="in" formula="in" desc="Tests for membership in sequences (like lists or strings)." type="keyword"></Func>
+  <Func name="is" formula="is" desc="Tests for object identity, checking if two references point to the same object." type="keyword"></Func>
+  <Func name="lambda" formula="lambda" desc="Creates an anonymous function (a function without a name)." type="keyword"></Func>
+  <Func name="nonlocal" formula="nonlocal" desc="Declares a variable in the nearest enclosing scope that is not global." type="keyword"></Func>
+  <Func name="not" formula="not" desc="Logical operator that negates the truth value of its operand." type="keyword"></Func>
+  <Func name="not" formula="not" desc="Logical operator that negates the truth value of its operand." type="keyword"></Func>
+  <Func name="or" formula="or" desc="Logical operator that returns True if at least one operand is true." type="keyword"></Func>
+  <Func name="pass" formula="pass" desc="A null statement; it does nothing when executed." type="keyword"></Func>
+  <Func name="raise" formula="raise" desc="Raises an exception manually." type="keyword"></Func>
+  <Func name="return" formula="return" desc="Exits a function and optionally returns a value." type="keyword"></Func>
+  <Func name="try" formula="try" desc="Starts a block of code that will be tested for errors while it is being executed." type="keyword"></Func>
+  <Func name="while" formula="while" desc="Starts a while loop, which executes as long as its condition is true." type="keyword"></Func>
+  <Func name="with" formula="with" desc="Simplifies exception handling by encapsulating common preparation and cleanup tasks in so-called context managers." type="keyword"></Func>
+  <Func name="yield" formula="yield" desc="Used in generators to return values one at a time, pausing the function's execution state between calls." type="keyword"></Func>  
 
 </Function>
