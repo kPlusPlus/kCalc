@@ -1,4 +1,7 @@
-﻿--- 'VsaEngine' is obsolete
+﻿
+--- LAST function option !!!
+
+--- 'VsaEngine' is obsolete
 --- UVEDI LANG Attribute u xFunction tako da svaki jezik ima svoje keywordse
 +++ uvedi Python
 	+++ dodao sam IronPython
