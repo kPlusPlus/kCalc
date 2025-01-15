@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Function>
 
+  <!-- CSharp Reserved word -->
   <Func name="abstract" formula="abstract" cursor="-1" desc="Defines an abstract class or method that must be implemented in derived classes." cat="CSharp" type="keyword"></Func>
   <Func name="as" formula="as" cursor="-1" desc="Used for casting an object to a specific type." cat="CSharp" type="keyword"></Func>
   <Func name="base" formula="base" cursor="-1" desc="Refers to the base class of the current instance." cat="CSharp" type="keyword"></Func>
@@ -24,46 +25,40 @@
   <Func name="event" formula="event" cursor="-1" desc="Declares an event, which is a message sent by an object to signal the occurrence of an action." cat="CSharp" type="keyword"></Func>
   <Func name="explicit" formula="explicit" cursor="-1" desc="Indicates that a conversion operator requires an explicit cast to be invoked." cat="CSharp" type="keyword"></Func>
   <Func name="extern" formula="extern" cursor="-1" desc="Indicates that the method is implemented externally (e.g., in another assembly)." cat="CSharp" type="keyword"></Func>
- 
-   
+  <Func name="false" formula="false" cursor="-1" desc="Represents the Boolean value false." cat="CSharp" type="keyword"></Func>
+  <Func name="finally" formula="finally" cursor="-1" desc="Declares a block of code that will execute after try and catch blocks, regardless of whether an exception was thrown." cat="CSharp" type="keyword"></Func>
+  <Func name="fixed" formula="fixed" cursor="-1" desc="Pins a variable in place so that it can be accessed by pointer operations without being moved by garbage collection." cat="CSharp" type="keyword"></Func>
+  <Func name="float" formula="float" cursor="-1" desc="Represents a single-precision floating-point number." cat="CSharp" type="keyword"></Func>
+  <Func name="for" formula="for" cursor="-1" desc="Initiates a for loop, which executes statements repeatedly based on specified conditions." cat="CSharp" type="keyword"></Func>
+  <Func name="foreach" formula="foreach" cursor="-1" desc="Iterates through each element in a collection or array." cat="CSharp" type="keyword"></Func>
+  <Func name="goto" formula="goto" cursor="-1" desc="Transfers control to another part of the program, identified by a label." cat="CSharp" type="keyword"></Func>
+  <Func name="if" formula="if" cursor="-1" desc="Executes statements based on whether a specified condition evaluates to true or false." cat="CSharp" type="keyword"></Func>
+  <Func name="implicit" formula="implicit" cursor="-1" desc="Indicates that a conversion operator can be invoked without an explicit cast." cat="CSharp" type="keyword"></Func> 
+  <Func name="in" formula="in" cursor="-1" desc="Used in foreach loops and specifies input parameters in method signatures (in parameter)." cat="CSharp" type="keyword"></Func> 
+  <Func name="int" formula="int" cursor="-1" desc="Represents a signed 32-bit integer type." cat="CSharp" type="keyword"></Func> 
+  <Func name="interface" formula="interface" cursor="-1" desc="Declares an interface, which is a contract that classes can implement." cat="CSharp" type="keyword"></Func>
+  <Func name="internal" formula="internal" cursor="-1" desc="Specifies that access is limited to the current assembly." cat="CSharp" type="keyword"></Func>
+  <Func name="is" formula="is" cursor="-1" desc="Checks if an object is compatible with a given type and performs casting if it is compatible." cat="CSharp" type="keyword"></Func>
+  <Func name="lock" formula="lock" cursor="-1" desc="Acquires the mutual-exclusion lock for a specified object, preventing other threads from accessing it until released." cat="CSharp" type="keyword"></Func>
+  <Func name="long" formula="long" cursor="-1" desc="Represents a signed 64-bit integer type." cat="CSharp" type="keyword"></Func>
+  <Func name="namespace" formula="namespace" cursor="-1" desc="Declares a scope that contains a set of related objects, such as classes and interfaces." cat="CSharp" type="keyword"></Func>
+  <Func name="new" formula="new" cursor="-1" desc="Creates objects or hides members inherited from base classes; also used to declare constructors." cat="CSharp" type="keyword"></Func>
+  <Func name="null" formula="null" cursor="-1" desc="Represents the absence of any object or value; it is not initialized yet." cat="CSharp" type="keyword"></Func>
+  <Func name="object" formula="object" cursor="-1" desc="The base type from which all other types derive; represents any data type in C#." cat="CSharp" type="keyword"></Func>
+  <Func name="operator" formula="operator" cursor="-1" desc="Defines user-defined operators for custom types or overloads existing operators for types defined by the user." cat="CSharp" type="keyword"></Func>
+  <Func name="out" formula="out" cursor="-1" desc="Indicates that an argument is passed by reference and will be initialized within the called method." cat="CSharp" type="keyword"></Func>
+  <Func name="override" formula="override" cursor="-1" desc="Modifies the implementation of an inherited member from the base class." cat="CSharp" type="keyword"></Func>
+  <Func name="params" formula="params" cursor="-1" desc="Allows you to specify a variable number of arguments for methods." cat="CSharp" type="keyword"></Func>
+  <Func name="private" formula="private" cursor="-1" desc="Restricts access to members within the containing class only." cat="CSharp" type="keyword"></Func>
+  <Func name="protected" formula="protected" cursor="-1" desc="Restricts access to members within derived classes and containing classes." cat="CSharp" type="keyword"></Func>
+  <Func name="public" formula="public" cursor="-1" desc="Allows access to members from any other code." cat="CSharp" type="keyword"></Func>
+  <Func name="readonly" formula="readonly" cursor="-1" desc="Indicates that fields can only be assigned during declaration or within constructors." cat="CSharp" type="keyword"></Func>
+  <Func name="ref" formula="ref" cursor="-1" desc="Indicates that an argument is passed by reference." cat="CSharp" type="keyword"></Func>
+  <Func name="return" formula="return" cursor="-1" desc="Exits from the current method and optionally returns a value." cat="CSharp" type="keyword"></Func>
+  <Func name="sbyte" formula="sbyte" cursor="-1" desc="Represents an 8-bit signed integer." cat="CSharp" type="keyword"></Func>
+  <Func name="sealed" formula="sealed" cursor="-1" desc="Prevents other classes from inheriting from it." cat="CSharp" type="keyword"></Func>
+  <Func name="short" formula="short" cursor="-1" desc="Represents a signed 16-bit integer." cat="CSharp" type="keyword"></Func>
+  <Func name="sizeof" formula="sizeof" cursor="-1" desc="Returns the size in bytes of any data type." cat="CSharp" type="keyword"></Func>
   
-  
-  
- 
-  extern	Indicates that the method is implemented externally (e.g., in another assembly).
-  false	Represents the Boolean value false.
-  finally	Declares a block of code that will execute after try and catch blocks, regardless of whether an exception was thrown.
-  fixed	Pins a variable in place so that it can be accessed by pointer operations without being moved by garbage collection.
-  float	Represents a single-precision floating-point number.
-  for	Initiates a for loop, which executes statements repeatedly based on specified conditions.
-  foreach	Iterates through each element in a collection or array.
-  goto	Transfers control to another part of the program, identified by a label.
-  if	Executes statements based on whether a specified condition evaluates to true or false.
-  implicit	Indicates that a conversion operator can be invoked without an explicit cast.
-  in	Used in foreach loops and specifies input parameters in method signatures (in parameter).
-  int	Represents a signed 32-bit integer type.
-  interface	Declares an interface, which is a contract that classes can implement.
-  internal	Specifies that access is limited to the current assembly.
-  is	Checks if an object is compatible with a given type and performs casting if it is compatible.
-  lock	Acquires the mutual-exclusion lock for a specified object, preventing other threads from accessing it until released.
-  long	Represents a signed 64-bit integer type.
-  namespace	Declares a scope that contains a set of related objects, such as classes and interfaces.
-  new	Creates objects or hides members inherited from base classes; also used to declare constructors.
-  null	Represents the absence of any object or value; it is not initialized yet.
-  object	The base type from which all other types derive; represents any data type in C#.
-  operator	Defines user-defined operators for custom types or overloads existing operators for types defined by the user.
-  out	Indicates that an argument is passed by reference and will be initialized within the called method.
-  override	Modifies the implementation of an inherited member from the base class.
-  params	Allows you to specify a variable number of arguments for methods.
-  private	Restricts access to members within the containing class only.
-  protected	Restricts access to members within derived classes and containing classes.
-  public	Allows access to members from any other code.
-  readonly	Indicates that fields can only be assigned during declaration or within constructors.
-  ref	Indicates that an argument is passed by reference.
-  return	Exits from the current method and optionally returns a value.
-  sbyte	Represents an 8-bit signed integer.
-  sealed	Prevents other classes from inheriting from it.
-  short	Represents a signed 16-bit integer.
-  sizeof	Returns the size in bytes of any data type.
 
 </Function>
