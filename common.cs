@@ -89,7 +89,7 @@ namespace kCalc
                 pathsPython.Add(@"c:\Python312\Lib"); // Add the path where your external module is located
                 pyengine.SetSearchPaths(pathsPython);
 
-
+                formula = formula.Replace("\n", "");
                 string pythonCode = formula;
 
                 // Execute the Python code
