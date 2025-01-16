@@ -59,6 +59,47 @@
   <Func name="sealed" formula="sealed" cursor="-1" desc="Prevents other classes from inheriting from it." cat="CSharp" type="keyword"></Func>
   <Func name="short" formula="short" cursor="-1" desc="Represents a signed 16-bit integer." cat="CSharp" type="keyword"></Func>
   <Func name="sizeof" formula="sizeof" cursor="-1" desc="Returns the size in bytes of any data type." cat="CSharp" type="keyword"></Func>
-  
+
+
+  <!-- *** operators *** -->
+  <!--
+	+ plus
+	- minus
+	* multiplication
+	/ division
+	% modulus or remainder
+	-->
+  <Func name="=" formula="=" cursor="-1" desc="=" cat="Operator" type="operator" regex="="></Func>
+  <Func name="+" formula="+" cursor="-1" desc="plus" cat="Operator" type="operator" regex="[+]"></Func>
+  <Func name="-" formula="-" cursor="-1" desc="minus" cat="Operator" type="operator" regex="-"></Func>
+  <Func name="*" formula="*" cursor="-1" desc="multiplication" cat="Operator" type="operator" regex="[*]"></Func>
+  <Func name="&#0047;" formula="&#0047;" cursor="1" desc="division" cat="Operator" type="operator" regex="[/]"></Func>
+
+  <!--
+	== is equal to
+	!= is not equal to
+	>  greater than
+	<  less than
+	>= greater than or equal to
+	<= less than or equal to
+	-->
+  <Func name="==" formula="==" cursor="1" desc="is equal to" cat="Operator" type="operator"></Func>
+  <Func name="!=" formula="!=" cursor="1" desc="is not equal to" cat="Operator" type="operator"></Func>
+  <Func name="&#0061;" formula="&#0061;" cursor="1" desc="greater than" cat="Operator" type="operator"></Func>
+  <Func name="&#0060;" formula="&#0060;" cursor="1" desc="less than" cat="Operator" type="operator"></Func>
+  <Func name="&#0061;=" formula="&#0061;=" cursor="2" desc="greater than or equal to" cat="Operator" type="operator"></Func>
+  <Func name="&#0060;=" formula="&#0060;=" cursor="2" desc="less than or equal to" cat="Operator" type="operator"></Func>
+
+  <!--
+	&& and
+    a == 2 && b == 2 both a and b are equal to 2
+    || or
+    a == 2 || b == 2 a is equal to 2 or b is equal to 2
+    ! not
+    !aa is not true, or a is false 
+	-->
+  <Func name="&#0038;&#0038;" formula="&#0038;&#0038;" cursor="2" desc="and" cat="Operator" type="operator"></Func>
+  <Func name="||" formula="||" cursor="2" desc="or" cat="Operator" type="operator"></Func>
+  <Func name="!" formula="!" cursor="1" desc="not" cat="Operator" type="operator"></Func>
 
 </Function>

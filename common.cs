@@ -105,7 +105,7 @@ namespace kCalc
                 if (engine.Compile())
                     return engine.Evaluate().ToString();
                 else
-                    return engine.Messages.ToString();
+                    return engine.Messages[0].ToString();
             }
             catch (Exception ex)
             {
