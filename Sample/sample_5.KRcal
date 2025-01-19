@@ -1,0 +1,15 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red255\green215\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\cf1\f0\fs18\lang1050 // Define a function\par
+function greet(name) \{\par
+    return "Hello, " + name + "!";\par
+\}\par
+\par
+// Call the function\par
+let message = greet("Alice");\par
+let Result = greet("Alice");\par
+console.log(message); // Output: Hello, Alice!\par
+\par
+\par
+}

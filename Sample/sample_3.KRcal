@@ -1,0 +1,8 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red138\green43\blue226;\red255\green215\blue0;\red128\green128\blue128;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\cf1\f0\fs18\lang1050 var\cf2  a \cf3 =\cf2  123;\par
+\cf1 var\cf2  b \cf3 =\cf2  4\cf3 -\cf2 567;\par
+\cf1 var\cf2  Result \cf3 =\cf2  a \cf3 *\cf2  b;\par
+\par
+}

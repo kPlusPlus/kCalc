@@ -1,0 +1,7 @@
+{\rtf1\ansi\ansicpg1250\deff0\nouicompat\deflang1050{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red255\green215\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\cf1\f0\fs18 var jed = 123;\par
+var Result =  jed * 5;\par
+ \par
+}

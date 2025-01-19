@@ -1,0 +1,14 @@
+{\rtf1\ansi\ansicpg1250\deff0\nouicompat\deflang1050{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red138\green43\blue226;\red255\green215\blue0;\red128\green128\blue128;}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\cf1\f0\fs18 function\cf2  neki() \{\par
+\tab\cf1 return\cf2  101;\par
+\}\par
+\par
+\cf1 var\cf2  a \cf3 =\cf2  1;\par
+\cf1 var\cf2  b \cf3 =\cf2  2;\par
+\cf1 var\cf2  c \cf3 =\cf2  3;\par
+\cf1 var\cf2  Result \cf3 =\cf2  neki() \cf3 *\cf2  a \cf3 *\cf2  b \cf3 *\cf2  c;\par
+\par
+\par
+}

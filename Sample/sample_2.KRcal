@@ -1,0 +1,8 @@
+{\rtf1\ansi\ansicpg1250\deff0\nouicompat\deflang1050{\fonttbl{\f0\fnil\fcharset238 Tahoma;}}
+{\colortbl ;\red255\green215\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\cf1\f0\fs18 var a = 2.2345678;\par
+var b = 1.2345678;\par
+var Result = a * 5;\par
+ \par
+}
