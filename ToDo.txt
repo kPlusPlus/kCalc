@@ -1,4 +1,8 @@
 ﻿
+
+daj pogledaj Microsoft.VisualStudio.Language.Intellisense
+
+
 --- LAST function option !!!
 
 --- 'VsaEngine' is obsolete
@@ -81,6 +85,7 @@ DEBUG
 		VB		+
 		C#		+
 		F#		--- dogradi
+		PYTHON	+
 
 
 *FEAUTURE	dogradi bolje boje od ovih može kroz THEME
