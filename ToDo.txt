@@ -1,4 +1,4 @@
-﻿
+﻿--- uz varijable dodaj i polje description koji pokupiš iz komentara
 
 daj pogledaj Microsoft.VisualStudio.Language.Intellisense
 

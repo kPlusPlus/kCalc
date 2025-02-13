@@ -115,6 +115,10 @@ namespace kCalc
             return "";
         }
 
+        /// <summary>
+        /// Set Variables to 
+        /// </summary>
+        /// <param name="sCont"></param>
         public void SetVariable(string sCont)
         {
             StringCollection resultList = new StringCollection();
@@ -252,7 +256,8 @@ namespace kCalc
     {
         Nothing,
         Int,
-        Dobule
+        Dobule,
+        String
     }
 
 
