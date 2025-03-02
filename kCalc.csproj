@@ -7,7 +7,7 @@
     <ProjectGuid>{C7843F6D-0841-47CA-8930-262FBE316B5A}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>PERFEKTNA_Icon.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>kCalc</AssemblyName>
@@ -414,6 +414,7 @@
     <Content Include="Calc.ico" />
     <Content Include="Documents\varijable_regex.txt" />
     <Content Include="Documents\Zadaci.txt" />
+    <Content Include="PERFEKTNA_Icon.ico" />
     <Content Include="priprema\about.gif" />
     <Content Include="priprema\about.jpg" />
     <Content Include="priprema\background.jpg" />
@@ -423,7 +424,6 @@
     <None Include="packages.config" />
     <None Include="priprema\calc2_back.png" />
     <None Include="priprema\calc2_tipka.png" />
-    <Content Include="priprema\Corel Auto-Preserve\nove boje.png" />
     <Content Include="priprema\expences-button-png-hi.png" />
     <Content Include="priprema\icon\ni0043-48.gif" />
     <Content Include="priprema\icon\ni0044-48.gif" />
