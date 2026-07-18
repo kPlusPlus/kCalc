@@ -1,0 +1,31 @@
+dotnet run --project src/NetLift.Cli -- analyze YourSolution.sln --verbose
+
+dotnet run --project src/NetLift.Cli -- analyze q:\test\kCalcOrig\kCalc.sln --verbose
+
+netlift migrate q:\test\kCalcOrig\kCalc.sln
+dotnet run --project src/NetLift.Cli migrate q:\test\kCalcOrig\kCalc.sln
+
+dotnet run --project src/NetLift.Cli -- modernize q:\test\kCalcOrig\kCalc.sln --pattern cqrs --verbose
+
+
+migraciju iz .NET Framework 4.8 u .NET 8 s GitHub Copilot 
+modernize this .NET Framework 4.8 project to .NET 8
+
+
+
+
+-------------------------------------------------
++++ dotnet add package Microsoft.Windows.Compatibility
+
+
+upgrade-assistant upgrade kCalc.csproj
+
+
+-------------------------------------------------
+https://claude.ai/chat/17b63ac2-3b30-4289-a3fc-5505ae7aed2c
+
+dotnet outdated
+
+dotnet add package System.Configuration.ConfigurationManager
+dotnet add package System.Drawing.Common
+dotnet add package Microsoft.Win32.Registry
