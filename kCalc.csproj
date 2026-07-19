@@ -1,16 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C7843F6D-0841-47CA-8930-262FBE316B5A}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ApplicationIcon>PERFEKTNA_Icon.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>kCalc</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -18,20 +12,12 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>kCalc</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>kCalc.FormKCalc</StartupObject>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>false</GenerateManifests>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -46,485 +32,198 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>DEBUG</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
-    <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
     <NoWarn>
     </NoWarn>
-    <Optimize>false</Optimize>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
     <UseVSHostingProcess>true</UseVSHostingProcess>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
     <NoWarn>
     </NoWarn>
-    <Optimize>true</Optimize>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Acornima, Version=1.1.0.0, Culture=neutral, PublicKeyToken=496b38436bb9edeb, processorArchitecture=MSIL">
-      <HintPath>packages\Acornima.1.1.0\lib\net462\Acornima.dll</HintPath>
-    </Reference>
-    <Reference Include="Esprima, Version=3.0.5.0, Culture=neutral, PublicKeyToken=2e92ba9c8d81157f, processorArchitecture=MSIL">
-      <HintPath>packages\Esprima.3.0.5\lib\net462\Esprima.dll</HintPath>
-    </Reference>
-    <Reference Include="FSharp.Compiler.CodeDom, Version=1.0.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>packages\FSharp.Compiler.CodeDom.1.0.0.1\lib\net40\FSharp.Compiler.CodeDom.dll</HintPath>
-    </Reference>
-    <Reference Include="FSharp.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\FSharp.Core.9.0.100\lib\netstandard2.0\FSharp.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython, Version=3.4.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\IronPython.3.4.2\lib\net462\IronPython.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.Modules, Version=3.4.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\IronPython.3.4.2\lib\net462\IronPython.Modules.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.SQLite, Version=3.4.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\IronPython.3.4.2\lib\net462\IronPython.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.Wpf, Version=3.4.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\IronPython.3.4.2\lib\net462\IronPython.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Jint, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2e92ba9c8d81157f, processorArchitecture=MSIL">
-      <HintPath>packages\Jint.4.1.0\lib\net462\Jint.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.Cryptography, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.Cryptography.10.0.10\lib\net462\Microsoft.Bcl.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeAnalysis, Version=4.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.12.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.12.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting, Version=4.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.Scripting.4.12.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.Scripting, Version=4.12.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.Scripting.Common.4.12.0\lib\netstandard2.0\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Dynamic, Version=1.3.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.5\lib\net462\Microsoft.Dynamic.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyModel, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Extensions.DependencyModel.9.0.0\lib\net462\Microsoft.Extensions.DependencyModel.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.JScript">
       <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Microsoft.Scripting, Version=1.3.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.5\lib\net462\Microsoft.Scripting.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Scripting.Metadata, Version=1.3.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>packages\DynamicLanguageRuntime.1.3.5\lib\net462\Microsoft.Scripting.Metadata.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
     </Reference>
     <Reference Include="Microsoft.Vsa">
       <Name>Microsoft.Vsa</Name>
       <HintPath>Microsoft.Vsa.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Registry.AccessControl, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Win32.Registry.AccessControl.10.0.10\lib\net462\Microsoft.Win32.Registry.AccessControl.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.SystemEvents, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Win32.SystemEvents.10.0.10\lib\net462\Microsoft.Win32.SystemEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationFramework.Luna" />
-    <Reference Include="System">
+    <Reference Update="System">
       <Name>System</Name>
     </Reference>
-    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.CodeDom, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.CodeDom.10.0.10\lib\net462\System.CodeDom.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Immutable, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Collections.Immutable.9.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Configuration.ConfigurationManager.10.0.10\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Core">
+    <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data">
+    <Reference Update="System.Data">
       <Name>System.Data</Name>
     </Reference>
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.Odbc, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Data.Odbc.10.0.10\lib\net462\System.Data.Odbc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.OleDb, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Data.OleDb.10.0.10\lib\net462\System.Data.OleDb.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data.OracleClient" />
-    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Data.SqlClient.4.9.1\lib\net462\System.Data.SqlClient.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.EventLog, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.EventLog.10.0.10\lib\net462\System.Diagnostics.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.FileVersionInfo.4.3.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Diagnostics.PerformanceCounter, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.PerformanceCounter.10.0.10\lib\net462\System.Diagnostics.PerformanceCounter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.StackTrace.4.3.0\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.DirectoryServices.AccountManagement" />
-    <Reference Include="System.DirectoryServices.Protocols" />
-    <Reference Include="System.Drawing">
+    <Reference Update="System.Drawing">
       <Name>System.Drawing</Name>
     </Reference>
-    <Reference Include="System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Drawing.Common.10.0.10\lib\net462\System.Drawing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="System.EnterpriseServices">
-      <Name>System.EnterpriseServices</Name>
-    </Reference>
-    <Reference Include="System.Formats.Asn1, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Formats.Asn1.10.0.10\lib\net462\System.Formats.Asn1.dll</HintPath>
-    </Reference>
     <Reference Include="System.IdentityModel" />
-    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.FileSystem.AccessControl.5.0.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.IO.Packaging, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Packaging.10.0.10\lib\net462\System.IO.Packaging.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipelines, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Pipelines.9.0.0\lib\net462\System.IO.Pipelines.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipes.AccessControl, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Pipes.AccessControl.5.0.0\lib\net461\System.IO.Pipes.AccessControl.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Ports, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Ports.10.0.10\lib\net462\System.IO.Ports.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Reflection.Context" />
-    <Reference Include="System.Reflection.Metadata, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Reflection.Metadata.9.0.0\lib\net462\System.Reflection.Metadata.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.Caching" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Cng, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Cng.5.0.0\lib\net47\System.Security.Cryptography.Cng.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Pkcs, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Pkcs.10.0.10\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.ProtectedData, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.ProtectedData.10.0.10\lib\net462\System.Security.Cryptography.ProtectedData.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Xml, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Xml.10.0.10\lib\net462\System.Security.Cryptography.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Permissions, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Permissions.10.0.10\lib\net462\System.Security.Permissions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
-    </Reference>
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Duplex, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.Primitives.8.1.2\lib\net462\System.ServiceModel.Duplex.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Http, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.Http.8.1.2\lib\net462\System.ServiceModel.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.NetTcp, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.NetTcp.8.1.2\lib\net462\System.ServiceModel.NetTcp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Primitives, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.Primitives.8.1.2\lib\net462\System.ServiceModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Security, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.Primitives.8.1.2\lib\net462\System.ServiceModel.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Syndication, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceModel.Syndication.10.0.10\lib\net462\System.ServiceModel.Syndication.dll</HintPath>
-    </Reference>
     <Reference Include="System.ServiceProcess" />
-    <Reference Include="System.ServiceProcess.ServiceController, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ServiceProcess.ServiceController.10.0.10\lib\net462\System.ServiceProcess.ServiceController.dll</HintPath>
-    </Reference>
     <Reference Include="System.Speech" />
-    <Reference Include="System.Text.Encoding.CodePages, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Encoding.CodePages.10.0.10\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Encodings.Web.9.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Json.9.0.0\lib\net462\System.Text.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.AccessControl, Version=10.0.0.10, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Threading.AccessControl.10.0.10\lib\net462\System.Threading.AccessControl.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple" />
     <Reference Include="System.Web.Services" />
-    <Reference Include="System.Web.Services.Description, Version=8.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Web.Services.Description.8.1.2\lib\net462\System.Web.Services.Description.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-    </Reference>
-    <Reference Include="System.Xml">
+    <Reference Update="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Xml.XmlDocument.4.3.0\lib\net46\System.Xml.XmlDocument.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml.XPath, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Xml.XPath.4.3.0\lib\net46\System.Xml.XPath.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Xml.XPath.XDocument.4.3.0\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WindowsBase" />
+    <PackageReference Include="Acornima" Version="1.1.0" />
+    <PackageReference Include="DynamicLanguageRuntime" Version="1.3.5" />
+    <PackageReference Include="Esprima" Version="3.0.5" />
+    <PackageReference Include="FSharp.Compiler.CodeDom" Version="1.0.0.1" />
+    <PackageReference Include="FSharp.Core" Version="9.0.100" />
+    <PackageReference Include="IronPython" Version="3.4.2" />
+    <PackageReference Include="Jint" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Bcl.Cryptography" Version="10.0.10" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Scripting.Common" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Win32.Registry.AccessControl" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.AppContext" Version="4.3.0" />
+    <PackageReference Include="System.Buffers" Version="4.6.1" />
+    <PackageReference Include="System.CodeDom" Version="10.0.10" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="9.0.0" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="10.0.10" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="10.0.10" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.10" />
+    <PackageReference Include="System.Console" Version="4.3.1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.Odbc" Version="10.0.10" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.10" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.EventLog" Version="10.0.10" />
+    <PackageReference Include="System.Diagnostics.FileVersionInfo" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="10.0.10" />
+    <PackageReference Include="System.Diagnostics.StackTrace" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
+    <PackageReference Include="System.DirectoryServices" Version="10.0.10" />
+    <PackageReference Include="System.DirectoryServices" Version="10.0.10" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="10.0.10" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="10.0.10" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="10.0.10" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="10.0.10" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.10" />
+    <PackageReference Include="System.Dynamic.Runtime" Version="4.3.0" />
+    <PackageReference Include="System.Formats.Asn1" Version="10.0.10" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
+    <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.IO.Packaging" Version="10.0.10" />
+    <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
+    <PackageReference Include="System.IO.Pipes.AccessControl" Version="5.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="10.0.10" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+    <PackageReference Include="System.Management" Version="10.0.10" />
+    <PackageReference Include="System.Management" Version="10.0.10" />
+    <PackageReference Include="System.Memory" Version="4.6.3" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.6.1" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Context" Version="10.0.10" />
+    <PackageReference Include="System.Reflection.Context" Version="10.0.10" />
+    <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+    <PackageReference Include="System.Reflection.Emit.ILGeneration" Version="4.7.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
+    <PackageReference Include="System.Reflection.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Metadata" Version="9.0.0" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.Caching" Version="10.0.10" />
+    <PackageReference Include="System.Runtime.Caching" Version="10.0.10" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
+    <PackageReference Include="System.Security.AccessControl" Version="6.0.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <PackageReference Include="System.Security.Cryptography.Cng" Version="5.0.0" />
+    <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.10" />
+    <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.10" />
+    <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.10" />
+    <PackageReference Include="System.Security.Permissions" Version="10.0.10" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.1.2" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.1.2" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.1.2" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="10.0.10" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="10.0.10" />
+    <PackageReference Include="System.Speech" Version="10.0.10" />
+    <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.10" />
+    <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="9.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.AccessControl" Version="10.0.10" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.6.0" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.6.2" />
+    <PackageReference Include="System.Web.Services.Description" Version="8.1.2" />
+    <PackageReference Include="System.Xml.ReaderWriter" Version="4.3.1" />
+    <PackageReference Include="System.Xml.XDocument" Version="4.3.0" />
+    <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
+    <PackageReference Include="System.Xml.XPath" Version="4.3.0" />
+    <PackageReference Include="System.Xml.XPath.XDocument" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="common.cs">
-    </Compile>
-    <Compile Include="Documents\new_script.cs" />
-    <Compile Include="dsVariables.cs">
+    <Compile Update="dsVariables.cs">
       <DependentUpon>dsVariables.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dsVariables.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsVariables.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmValue.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmValue.Designer.cs">
-      <DependentUpon>frmValue.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptEngine.cs" />
-    <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="About.hr.resx">
-      <DependentUpon>About.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmValue.resx">
-      <DependentUpon>frmValue.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <Content Include="App.ico" />
     <Content Include="Calc.ico" />
     <Content Include="Documents\varijable_regex.txt" />
@@ -533,12 +232,9 @@
     <Content Include="priprema\about.gif" />
     <Content Include="priprema\about.jpg" />
     <Content Include="priprema\background.jpg" />
-    <None Include="About.rtf">
+    <None Update="About.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
-    <None Include="priprema\calc2_back.png" />
-    <None Include="priprema\calc2_tipka.png" />
     <Content Include="priprema\expences-button-png-hi.png" />
     <Content Include="priprema\icon\ni0043-48.gif" />
     <Content Include="priprema\icon\ni0044-48.gif" />
@@ -576,62 +272,25 @@
     <Content Include="icon\App.ico" />
     <Content Include="icon\Open.ico" />
     <Content Include="icon\save.ico" />
-    <None Include="ClassDiagram_kCalc.cd" />
-    <None Include="Documents\test6.KRcal" />
-    <None Include="Documents\test7.kcal" />
-    <None Include="Documents\test8.kcal" />
-    <None Include="Documents\test_var1.kcal" />
-    <None Include="dsVariables.xsc">
+    <None Update="dsVariables.xsc">
       <DependentUpon>dsVariables.xsd</DependentUpon>
     </None>
-    <None Include="dsVariables.xsd">
+    <None Update="dsVariables.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dsVariables.Designer.cs</LastGenOutput>
     </None>
-    <None Include="dsVariables.xss">
+    <None Update="dsVariables.xss">
       <DependentUpon>dsVariables.xsd</DependentUpon>
     </None>
-    <None Include="images\tipka.jpg" />
     <Content Include="ToDo.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="priprema\About.doc" />
-    <None Include="priprema\About.pspimage" />
-    <None Include="priprema\About.rtf" />
-    <None Include="priprema\about_2.pspimage" />
-    <None Include="priprema\background.pspimage" />
-    <None Include="priprema\background2.pspimage" />
     <None Include="priprema\Backup_of_tipka.cdr" />
-    <None Include="priprema\C# Runtime Compilation.mht" />
-    <None Include="priprema\disketa.pspimage" />
-    <None Include="priprema\icon\kCalc.pspimage" />
     <None Include="priprema\kCalc GUI.cdr" />
-    <None Include="priprema\LCD2N___.TTF" />
     <None Include="priprema\lcdwintt.zip" />
-    <None Include="priprema\LCDWinTT\LCD2N___.TTF" />
-    <None Include="priprema\NScript - A script host for C#_VB.NET_JScript.NET - CodeProject.mht" />
-    <None Include="priprema\nscript_src.zip" />
-    <None Include="priprema\open.pspimage" />
-    <None Include="priprema\POCKC___.TTF" />
-    <None Include="priprema\ReservedWord_JavaScript.txt.bak" />
-    <None Include="priprema\ScriptEngine - User Defined Calculations in C#, VB, JScript and F# - CodeProject.mht" />
-    <None Include="priprema\ScriptEngine.zip" />
-    <None Include="priprema\ScriptEngineTutorial.zip" />
-    <None Include="priprema\ScriptEngine_2.zip" />
     <None Include="priprema\setup\setup.vdproj" />
     <None Include="priprema\system.codedom.compiler.codedomprovider%28v=VS.100%29_aspx.mht" />
-    <None Include="priprema\tipka.cdr" />
-    <None Include="priprema\tipka.psd" />
-    <None Include="priprema\tipkaBar.cdr" />
-    <None Include="priprema\tipkaBar.psd" />
-    <None Include="Properties\app.manifest" />
-    <None Include="Properties\Settings.settings">
-      <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="testiramScriptu.kcal" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -668,22 +327,142 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.11.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
-    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.11.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  <ItemGroup Label="Compile items now included by globbing that were not in the original project file">
+    <Compile Remove="priprema\nscript\ConsoleApp.cs" />
+    <Compile Remove="priprema\nscript\AssemblyInfo.cs" />
+    <Compile Remove="priprema\nscriptw\WindowsApp.cs" />
+    <Compile Remove="priprema\nscriptw\AssemblyInfo.cs" />
+    <Compile Remove="priprema\nscript.lib\UnsupportedLanguageExecption.cs" />
+    <Compile Remove="priprema\nscript.lib\ScriptManager.cs" />
+    <Compile Remove="priprema\nscript.lib\IScriptManagerCallback.cs" />
+    <Compile Remove="priprema\nscript.lib\IScriptManager.cs" />
+    <Compile Remove="priprema\nscript.lib\CompilerError.cs" />
+    <Compile Remove="priprema\nscript.lib\BaseApp.cs" />
+    <Compile Remove="priprema\nscript.lib\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\WinForm.cs" />
+    <Compile Remove="priprema\cs-script\samples\unsafe_keyword.cs" />
+    <Compile Remove="priprema\cs-script\samples\tick.cs" />
+    <Compile Remove="priprema\cs-script\samples\SurrogateHostScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\ScriptEncryption\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\ScriptEncryption\host.cs" />
+    <Compile Remove="priprema\cs-script\samples\ScriptEncryption\CRC32.cs" />
+    <Compile Remove="priprema\cs-script\samples\ScriptEE.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\UntrustedCode.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\Host\UntrustedCode.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\Host\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\Host\ExpressionSerializer.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\Host\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\NET4.0\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\HostSimlified.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\Danger1.cs" />
+    <Compile Remove="priprema\cs-script\samples\Sandboxing\Danger.cs" />
+    <Compile Remove="priprema\cs-script\samples\RuntimeInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\runScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\REST\WebAPI_Server.cs" />
+    <Compile Remove="priprema\cs-script\samples\Resources\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\ReflectScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\Progressbar.cs" />
+    <Compile Remove="priprema\cs-script\samples\printScreen.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\nuget_update.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\freestyle.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\hashdef.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\dsl.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\auto_method.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\Precompilers\auto_class.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\freestyle_dsl.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\CPPHashDef.cs" />
+    <Compile Remove="priprema\cs-script\samples\Precompilers\AdvancedSamples\classless.cs" />
+    <Compile Remove="priprema\cs-script\samples\nkill.cs" />
+    <Compile Remove="priprema\cs-script\samples\Macros\script_simple.cs" />
+    <Compile Remove="priprema\cs-script\samples\Macros\script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Macros\precompile.cs" />
+    <Compile Remove="priprema\cs-script\samples\importTickScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Scripting.native.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Scripting.Extensions.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Scripting.evaluator.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\MemoryManagement.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\HostingScenarios.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CompilerAsService\Hello.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2012 project\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2010 project\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\VS2008 project\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\TypeSafety.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\RuntimeErrors.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\VS2008 project\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Referencing\ExternalAsm.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Performance.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Older versions of CLR\AssemblyInfo.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\NonC#CompilerInHostApp.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\HostVBScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Non C# scripts\host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Modifying script without restart\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Modifying script without restart\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\MethodSignatures.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\LifetimeManagement.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\InterfaceAlignmentWithoutScripting.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\HelloScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\InterfaceAlignment\ExtendingLife.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostVBScript.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingWithInterfaces\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\HostingSimplified\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Hello.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Eval.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\DetectingScriptCodeCalls\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\DetectingScriptCodeCalls\Host.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Debugging.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\CustomProbing.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\ConditionalCompilation.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\CompileErrors.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\Classless.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Legacy Samples\CodeDOM\AppDomainExtensions.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\HostingScenarios.cs" />
+    <Compile Remove="priprema\cs-script\samples\Hosting\Hello.cs" />
+    <Compile Remove="priprema\cs-script\samples\hello_auto.cs" />
+    <Compile Remove="priprema\cs-script\samples\hello.cs" />
+    <Compile Remove="priprema\cs-script\samples\getUrl.cs" />
+    <Compile Remove="priprema\cs-script\samples\ErrorLevelTester.cs" />
+    <Compile Remove="priprema\cs-script\samples\cutfile.cs" />
+    <Compile Remove="priprema\cs-script\samples\code.Net_v4.5.cs" />
+    <Compile Remove="priprema\cs-script\samples\Code.cs" />
+    <Compile Remove="priprema\cs-script\samples\Classless\Standalone script\HelloWorld.cs" />
+    <Compile Remove="priprema\cs-script\samples\Classless\Hostied script\ExecuteClasslessWithDefaultCompiler.cs" />
+    <Compile Remove="priprema\cs-script\samples\Automation\Script.cs" />
+    <Compile Remove="priprema\cs-script\samples\Automation\App.cs" />
+    <Compile Remove="priprema\cs-script\lib\verify.cs" />
+    <Compile Remove="priprema\cs-script\lib\nuget_update.cs" />
+    <Compile Remove="priprema\cs-script\lib\lsnuget.cs" />
+    <Compile Remove="priprema\cs-script\lib\lscache.cs" />
+    <Compile Remove="priprema\cs-script\lib\help.cs" />
+    <Compile Remove="priprema\cs-script\lib\debugVS14.0.cs" />
+    <Compile Remove="priprema\cs-script\lib\debugVS12.0.cs" />
+    <Compile Remove="priprema\cs-script\lib\debugVS11.0.cs" />
+    <Compile Remove="priprema\cs-script\lib\debugVS10.0.cs" />
+    <Compile Remove="priprema\cs-script\lib\config.cs" />
+    <Compile Remove="priprema\cs-script\lib\clearTemp.cs" />
+    <Compile Remove="priprema\cs-script\inc\who.cs" />
+    <Compile Remove="priprema\cs-script\inc\which.cs" />
+    <Compile Remove="priprema\cs-script\inc\WebApi.cs" />
+    <Compile Remove="priprema\cs-script\inc\ServiceStack.cs" />
+    <Compile Remove="priprema\cs-script\inc\pkill.cs" />
+    <Compile Remove="priprema\cs-script\inc\isadmin.cs" />
+    <Compile Remove="priprema\cs-script\hello.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
-  <Import Project="packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets'))" />
-  </Target>
+  <ItemGroup Label="EmbeddedResource items now included by globbing that were not in the original project file">
+    <EmbeddedResource Remove="priprema\nscript.lib\NScript.resx" />
+  </ItemGroup>
 </Project>
